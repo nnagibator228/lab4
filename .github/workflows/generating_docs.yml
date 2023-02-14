@@ -1,0 +1,17 @@
+name: Generate Doxygen docs depending on test results
+
+on:
+  repository_dispatch:
+    inputs:
+      test_passed_number:
+        description: 'Number of passed groups of tests'     
+        required: true
+        default: '0'
+jobs:
+  gendocs:
+    name: Check passed tests
+    if: ${{ inputs.test_passed_number == '4' }}
+    steps:
+      - name: Run Doxynegize
+        uses: actions/checkout@v3
+        uses: langroodi/doxygenize@v1

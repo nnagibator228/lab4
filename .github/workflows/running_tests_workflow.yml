@@ -1,0 +1,18 @@
+name: Run Check tests for C code
+
+on: [push]
+jobs:
+  build:
+  name: Running tests & Generate docs
+  runs-on: ubuntu-latest
+  steps:
+    - name: Install dependencies
+      uses: actions/checkout@v2
+      run: sudo apt-get install -y gcc tree check curl
+    - name: Run testing script
+      run: chmod +x run_tests.sh && ./run_tests.sh
+    - name: Send test results
+      shell: bash
+      env:
+        TOKEN: ${{ secrets.httptoken }}
+      run: export TESTS="$(./run_tests.sh | grep 'Failures: 0' | wc -l)" && curl -X POST -H "Accept: application/vnd.github.v3+json" -H "authorization: Bearer $TOKEN" https://api.github.com/repos/nnagibator228/lab4/dispatches -d '{"event_type": "docs","client_payload": {"test_passed_number": "'"$TESTS"'"}}'
