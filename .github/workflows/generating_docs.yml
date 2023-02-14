@@ -4,14 +4,15 @@ on:
   repository_dispatch:
     inputs:
       test_passed_number:
-        description: 'Number of passed groups of tests'     
+        description: 'Number of passed groups of tests'
         required: true
         default: '0'
 jobs:
   gendocs:
+    runs-on: ubuntu-latest
     name: Check passed tests
     if: ${{ inputs.test_passed_number == '4' }}
     steps:
       - name: Run Doxynegize
-        uses: actions/checkout@v3
+        uses: actions/checkout@v2
         uses: langroodi/doxygenize@v1
