@@ -139,7 +139,7 @@ Suite *compare_suite(void) {
   Suite *s;
   TCase *tc_core;
 
-  s = suite_create("KeyvalueTest");
+  s = suite_create("BinarySearchTreeTest");
   tc_core = tcase_create("Core");
 
   tcase_add_test(tc_core, test_bst_search_existing_data);
