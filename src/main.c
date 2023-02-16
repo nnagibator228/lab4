@@ -21,21 +21,21 @@ int main() {
   struct dictionary test = dictionary_constructor(compare_string_keys, print_keyvalues);
   double val1 = 12.213;
   char* key1 = "test";
-  double val2 = 36.546;
+  long long val2 = 3632432;
   char* key2 = "kekw";
   double val3 = 20.312;
   char* key3 = "lol";
-  double val4 = 67.874;
+  long long val4 = 673874;
   char* key4 = "allah";
   test.insert(&test, key1, &val1, sizeof(val1));
   test.insert(&test, key2, &val2, sizeof(val2));
   test.insert(&test, key3, &val3, sizeof(val3));
   test.insert(&test, key4, &val4, sizeof(val4));
-  int_print(test.search(&test, "test")->value);
+  int_print(test.search(&test, "kekw")->value);
   printf("--\n");
   dictionary_print(&test);
   printf("--\n");
-  test.remove(&test, "kekw");
+  test.remove(&test, "test");
   dictionary_print(&test);
   printf("--\n");
   double val5 = 1234.12;
@@ -45,4 +45,6 @@ int main() {
   double val6 = 4321.21;
   test.insert(&test, "jesus", &val6, sizeof(val6));
   dictionary_print(&test);
+  printf("calling destructor.\n");
+  dictionary_destructor(&test);
 }
