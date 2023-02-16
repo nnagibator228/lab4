@@ -1,0 +1,113 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Лабораторная работа №4 по предмету программирование МФ МГТУ им. Н.Э. Баумана: Исходный файл src/Dict/Dictionary.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Лабораторная работа №4 по предмету программирование МФ МГТУ им. Н.Э. Баумана
+   </div>
+   <div id="projectbrief">Реализация абстрактной структуры данных словарь</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_f30b32aefaa58c3a91d855067c011f44.html">Dict</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle"><div class="title">Dictionary.h</div></div>
+</div><!--header-->
+<div class="contents">
+<a href="_dictionary_8h.html">См. документацию.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span><span class="preprocessor">#ifndef Dictionary_header</span></div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#define Dictionary_header</span></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span><span class="preprocessor">#include &quot;../BST/BinarySearchTree.h&quot;</span></div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno"><a class="line" href="structdictionary.html">   18</a></span><span class="keyword">struct </span><a class="code hl_struct" href="structdictionary.html">dictionary</a>{</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="structdictionary.html#ac6c89915706cac6d89dbed1ed07d46d6">   20</a></span>  <span class="keyword">struct </span><a class="code hl_struct" href="structnode.html">node</a> *<a class="code hl_variable" href="structdictionary.html#ac6c89915706cac6d89dbed1ed07d46d6">root</a>;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="structdictionary.html#abdf1acceec7f94e7ae6b760ce8957e71">   22</a></span>  int (*<a class="code hl_variable" href="structdictionary.html#abdf1acceec7f94e7ae6b760ce8957e71">compare</a>)(<span class="keywordtype">void</span> *data_one, <span class="keywordtype">void</span> *data_two);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno"><a class="line" href="structdictionary.html#aa0531fe7c9f688e136e1765f4eb0d982">   24</a></span>  void (*<a class="code hl_variable" href="structdictionary.html#aa0531fe7c9f688e136e1765f4eb0d982">insert</a>)(<span class="keyword">struct </span><a class="code hl_struct" href="structdictionary.html">dictionary</a> *<a class="code hl_struct" href="structdictionary.html">dictionary</a>, <span class="keywordtype">char</span> *key, <span class="keywordtype">void</span> *value, <span class="keywordtype">unsigned</span> <span class="keywordtype">long</span> value_size);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <span class="keyword">struct </span><a class="code hl_struct" href="structkeyvalue.html">keyvalue</a> * (*search)(<span class="keyword">struct </span><a class="code hl_struct" href="structdictionary.html">dictionary</a> *<a class="code hl_struct" href="structdictionary.html">dictionary</a>, <span class="keywordtype">char</span> *key);</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="structdictionary.html#a14ef5554661a41bba11083f495ba71a4">   28</a></span>  void (*<a class="code hl_variable" href="structdictionary.html#a14ef5554661a41bba11083f495ba71a4">remove</a>)(<span class="keyword">struct </span><a class="code hl_struct" href="structdictionary.html">dictionary</a> *<a class="code hl_struct" href="structdictionary.html">dictionary</a>, <span class="keywordtype">char</span> *key);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno"><a class="line" href="structdictionary.html#ab6b709249916fab2c82c959827f81bfb">   30</a></span>  void (*<a class="code hl_variable" href="structdictionary.html#ab6b709249916fab2c82c959827f81bfb">print</a>)(<span class="keywordtype">void</span>* data);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>};</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="keyword">struct </span><a class="code hl_struct" href="structdictionary.html">dictionary</a> <a class="code hl_function" href="_dictionary_8h.html#a8adc3829a86b98ffd63c9fd9fdd9155d">dictionary_constructor</a>(int (*<a class="code hl_function" href="_compare_8c.html#adbb783ff4e2a922d5bea0b7a84bea4d6">compare</a>)(<span class="keywordtype">void</span> *entry_one, <span class="keywordtype">void</span> *entry_two), void (*<a class="code hl_variable" href="structdictionary.html#ab6b709249916fab2c82c959827f81bfb">print</a>)(<span class="keywordtype">void</span>* data));</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keywordtype">void</span> <a class="code hl_function" href="_dictionary_8h.html#accd261aab84d834443671641317436c1">dictionary_destructor</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="structdictionary.html">dictionary</a> *<a class="code hl_struct" href="structdictionary.html">dictionary</a>);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="keywordtype">void</span> <a class="code hl_function" href="_dictionary_8h.html#ae90d73cd1a9d86edc32685aa5e564d41">dictionary_print</a>(<span class="keyword">struct</span> <a class="code hl_struct" href="structdictionary.html">dictionary</a> *<a class="code hl_struct" href="structdictionary.html">dictionary</a>);</div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="keywordtype">void</span> <a class="code hl_function" href="_dictionary_8h.html#a8bfe5466e9d78d6107509e31a197c16d">print_keyvalues</a>(<span class="keywordtype">void</span>* data);</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#endif</span></div>
+<div class="ttc" id="a_compare_8c_html_adbb783ff4e2a922d5bea0b7a84bea4d6"><div class="ttname"><a href="_compare_8c.html#adbb783ff4e2a922d5bea0b7a84bea4d6">compare</a></div><div class="ttdeci">int compare(void *s1, void *s2)</div><div class="ttdoc">Сравнение для int.</div><div class="ttdef"><b>Definition:</b> <a href="_compare_8c_source.html#l00023">Compare.c:23</a></div></div>
+<div class="ttc" id="a_dictionary_8h_html_a8adc3829a86b98ffd63c9fd9fdd9155d"><div class="ttname"><a href="_dictionary_8h.html#a8adc3829a86b98ffd63c9fd9fdd9155d">dictionary_constructor</a></div><div class="ttdeci">struct dictionary dictionary_constructor(int(*compare)(void *entry_one, void *entry_two), void(*print)(void *data))</div><div class="ttdoc">Конструктор dictionary.</div><div class="ttdef"><b>Definition:</b> <a href="_dictionary_8c_source.html#l00029">Dictionary.c:29</a></div></div>
+<div class="ttc" id="a_dictionary_8h_html_a8bfe5466e9d78d6107509e31a197c16d"><div class="ttname"><a href="_dictionary_8h.html#a8bfe5466e9d78d6107509e31a197c16d">print_keyvalues</a></div><div class="ttdeci">void print_keyvalues(void *data)</div><div class="ttdoc">Вариант реализации функции вывода элементов словаря</div><div class="ttdef"><b>Definition:</b> <a href="_dictionary_8c_source.html#l00144">Dictionary.c:144</a></div></div>
+<div class="ttc" id="a_dictionary_8h_html_accd261aab84d834443671641317436c1"><div class="ttname"><a href="_dictionary_8h.html#accd261aab84d834443671641317436c1">dictionary_destructor</a></div><div class="ttdeci">void dictionary_destructor(struct dictionary *dictionary)</div><div class="ttdoc">Деструктор dictionary.</div><div class="ttdef"><b>Definition:</b> <a href="_dictionary_8c_source.html#l00047">Dictionary.c:47</a></div></div>
+<div class="ttc" id="a_dictionary_8h_html_ae90d73cd1a9d86edc32685aa5e564d41"><div class="ttname"><a href="_dictionary_8h.html#ae90d73cd1a9d86edc32685aa5e564d41">dictionary_print</a></div><div class="ttdeci">void dictionary_print(struct dictionary *dictionary)</div><div class="ttdoc">Вывод содержимого словаря</div><div class="ttdef"><b>Definition:</b> <a href="_dictionary_8c_source.html#l00133">Dictionary.c:133</a></div></div>
+<div class="ttc" id="astructdictionary_html"><div class="ttname"><a href="structdictionary.html">dictionary</a></div><div class="ttdoc">Абстрактная структура словаря</div><div class="ttdef"><b>Definition:</b> <a href="_dictionary_8h_source.html#l00018">Dictionary.h:18</a></div></div>
+<div class="ttc" id="astructdictionary_html_a14ef5554661a41bba11083f495ba71a4"><div class="ttname"><a href="structdictionary.html#a14ef5554661a41bba11083f495ba71a4">dictionary::remove</a></div><div class="ttdeci">void(* remove)(struct dictionary *dictionary, char *key)</div><div class="ttdef"><b>Definition:</b> <a href="_dictionary_8h_source.html#l00028">Dictionary.h:28</a></div></div>
+<div class="ttc" id="astructdictionary_html_aa0531fe7c9f688e136e1765f4eb0d982"><div class="ttname"><a href="structdictionary.html#aa0531fe7c9f688e136e1765f4eb0d982">dictionary::insert</a></div><div class="ttdeci">void(* insert)(struct dictionary *dictionary, char *key, void *value, unsigned long value_size)</div><div class="ttdef"><b>Definition:</b> <a href="_dictionary_8h_source.html#l00024">Dictionary.h:24</a></div></div>
+<div class="ttc" id="astructdictionary_html_ab6b709249916fab2c82c959827f81bfb"><div class="ttname"><a href="structdictionary.html#ab6b709249916fab2c82c959827f81bfb">dictionary::print</a></div><div class="ttdeci">void(* print)(void *data)</div><div class="ttdef"><b>Definition:</b> <a href="_dictionary_8h_source.html#l00030">Dictionary.h:30</a></div></div>
+<div class="ttc" id="astructdictionary_html_abdf1acceec7f94e7ae6b760ce8957e71"><div class="ttname"><a href="structdictionary.html#abdf1acceec7f94e7ae6b760ce8957e71">dictionary::compare</a></div><div class="ttdeci">int(* compare)(void *data_one, void *data_two)</div><div class="ttdef"><b>Definition:</b> <a href="_dictionary_8h_source.html#l00022">Dictionary.h:22</a></div></div>
+<div class="ttc" id="astructdictionary_html_ac6c89915706cac6d89dbed1ed07d46d6"><div class="ttname"><a href="structdictionary.html#ac6c89915706cac6d89dbed1ed07d46d6">dictionary::root</a></div><div class="ttdeci">struct node * root</div><div class="ttdef"><b>Definition:</b> <a href="_dictionary_8h_source.html#l00020">Dictionary.h:20</a></div></div>
+<div class="ttc" id="astructkeyvalue_html"><div class="ttname"><a href="structkeyvalue.html">keyvalue</a></div><div class="ttdoc">Структура, хранящая ключ строку и свободный указатель на значение</div><div class="ttdef"><b>Definition:</b> <a href="_keyvalue_8h_source.html#l00016">Keyvalue.h:16</a></div></div>
+<div class="ttc" id="astructnode_html"><div class="ttname"><a href="structnode.html">node</a></div><div class="ttdoc">Основной элемент бинарного дерева</div><div class="ttdef"><b>Definition:</b> <a href="_binary_search_tree_8h_source.html#l00016">BinarySearchTree.h:16</a></div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по Лабораторная работа №4 по предмету программирование МФ МГТУ им. Н.Э. Баумана. Последние изменения: Чт 16 Фев 2023 13:00:39. Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+</small></address>
+</body>
+</html>

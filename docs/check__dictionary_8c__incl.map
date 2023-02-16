@@ -1,0 +1,11 @@
+<map id="src/tests/check_dictionary.c" name="src/tests/check_dictionary.c">
+<area shape="rect" id="node1" title=" " alt="" coords="405,5,589,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,80,72,107"/>
+<area shape="rect" id="node3" href="$_dictionary_8h.html" title="Header&#45;файл реализации структуры Словаря на базе Дерева Бинарного Поиска" alt="" coords="97,80,223,107"/>
+<area shape="rect" id="node5" href="$_compare_8h.html" title="Header&#45;файл функций compare." alt="" coords="247,80,398,107"/>
+<area shape="rect" id="node6" href="$_keyvalue_8h.html" title="Header&#45;файл реализации структуры keyvalue." alt="" coords="422,80,573,107"/>
+<area shape="rect" id="node7" title=" " alt="" coords="597,80,659,107"/>
+<area shape="rect" id="node8" title=" " alt="" coords="684,80,748,107"/>
+<area shape="rect" id="node9" title=" " alt="" coords="773,80,833,107"/>
+<area shape="rect" id="node4" href="$_binary_search_tree_8h.html" title="Header&#45;файл реализации структуры Дерева Бинарного Поиска" alt="" coords="73,155,247,181"/>
+</map>

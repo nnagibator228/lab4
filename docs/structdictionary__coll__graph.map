@@ -1,0 +1,11 @@
+<map id="dictionary" name="dictionary">
+<area shape="rect" id="node1" title="Абстрактная структура словаря" alt="" coords="419,208,496,235"/>
+<area shape="rect" id="node2" href="$structnode.html" title="Основной элемент бинарного дерева" alt="" coords="205,59,255,85"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,79,60,105"/>
+<area shape="rect" id="node6" href="$structkeyvalue.html" title="Структура, хранящая ключ строку и свободный указатель на значение" alt="" coords="193,109,267,136"/>
+<area shape="rect" id="node4" title=" " alt="" coords="159,161,301,202"/>
+<area shape="rect" id="node5" title=" " alt="" coords="143,226,317,297"/>
+<area shape="rect" id="node7" title=" " alt="" coords="5,149,60,176"/>
+<area shape="rect" id="node8" title=" " alt="" coords="153,321,307,362"/>
+<area shape="rect" id="node9" title=" " alt="" coords="168,387,292,413"/>
+</map>

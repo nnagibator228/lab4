@@ -1,0 +1,22 @@
+<map id="main" name="main">
+<area shape="rect" id="node1" title=" " alt="" coords="5,348,56,375"/>
+<area shape="rect" id="node2" href="$_compare_8c.html#a59ee43f11a4d3a568d2c3db2d6f363c4" title="Сравнение для реализованного типа keyvalue." alt="" coords="106,180,251,207"/>
+<area shape="rect" id="node3" href="$_dictionary_8c.html#a8adc3829a86b98ffd63c9fd9fdd9155d" title="Конструктор dictionary." alt="" coords="104,231,253,257"/>
+<area shape="rect" id="node14" href="$_dictionary_8c.html#accd261aab84d834443671641317436c1" title="Деструктор dictionary." alt="" coords="107,323,250,349"/>
+<area shape="rect" id="node17" href="$_dictionary_8c.html#ae90d73cd1a9d86edc32685aa5e564d41" title="Вывод содержимого словаря" alt="" coords="124,373,233,400"/>
+<area shape="rect" id="node19" href="$main_8c.html#a3c877c3c750f8633b17ae4705df20a23" title="вывод чего&#45;то там" alt="" coords="145,424,213,451"/>
+<area shape="rect" id="node20" href="$_dictionary_8c.html#a8bfe5466e9d78d6107509e31a197c16d" title="Вариант реализации функции вывода элементов словаря" alt="" coords="123,475,235,501"/>
+<area shape="rect" id="node4" href="$_compare_8c.html#adbb783ff4e2a922d5bea0b7a84bea4d6" title="Сравнение для int." alt="" coords="695,155,767,181"/>
+<area shape="rect" id="node5" href="$_dictionary_8c.html#a7fb2945dac6b70e2a6216ef0984b83b0" title="Добавление элемента в словарь" alt="" coords="329,256,411,283"/>
+<area shape="rect" id="node9" href="$_dictionary_8c.html#a61eb8ca40b7139cfb4e674229e6e9d72" title="Удаление элемента в словаре" alt="" coords="323,104,417,131"/>
+<area shape="rect" id="node12" href="$_dictionary_8c.html#a4c458dc3aa1f39770a134ad39cbd07ce" title="Поиск элемента в словаре" alt="" coords="325,155,415,181"/>
+<area shape="rect" id="node6" href="$_binary_search_tree_8c.html#aaf66bb89347a6666796a4b73a0b591a5" title="Вставка элемента" alt="" coords="532,280,587,307"/>
+<area shape="rect" id="node8" href="$_keyvalue_8c.html#aaf151f3094bb9103b0054add2d0e43f4" title="Конструктор keyvalue." alt="" coords="487,155,632,181"/>
+<area shape="rect" id="node7" href="$_binary_search_tree_8c.html#a0f07215c1e0085d7bf68dd5b7f104032" title="Вставка элемента" alt="" coords="691,280,772,307"/>
+<area shape="rect" id="node10" href="$_binary_search_tree_8c.html#ad423ecd7a38d253a6230ad78c75a7747" title="Вставка элемента" alt="" coords="522,29,597,56"/>
+<area shape="rect" id="node11" href="$_binary_search_tree_8c.html#a081f1ef06ae37bd96bd8bbfb5ae46bf9" title="Поиск минимального элемента в поддереве" alt="" coords="680,29,783,56"/>
+<area shape="rect" id="node13" href="$_binary_search_tree_8c.html#a55664d31f1e7175febadee53e11b8fc5" title="Поиск элемента в дереве" alt="" coords="529,104,590,131"/>
+<area shape="rect" id="node15" href="$_dictionary_8c.html#a1e17f8287d87276f750271464925a206" title="рекурсивное удаление элементов ДБП" alt="" coords="301,331,439,373"/>
+<area shape="rect" id="node16" href="$_keyvalue_8c.html#a45054f967062d637b292a8411bbd07e0" title="Деструктор keyvalue." alt="" coords="490,339,629,365"/>
+<area shape="rect" id="node18" href="$_binary_search_tree_8c.html#a94107c6077e7356992db79288bc32d7c" title="Обход всех элементов дерева с выводом" alt="" coords="339,421,401,448"/>
+</map>

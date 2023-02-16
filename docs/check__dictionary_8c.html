@@ -1,0 +1,711 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Лабораторная работа №4 по предмету программирование МФ МГТУ им. Н.Э. Баумана: Файл src/tests/check_dictionary.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Лабораторная работа №4 по предмету программирование МФ МГТУ им. Н.Э. Баумана
+   </div>
+   <div id="projectbrief">Реализация абстрактной структуры данных словарь</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_d93a1d4020dea85bb71b237545b5e722.html">tests</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle"><div class="title">Файл check_dictionary.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;check.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="_dictionary_8h_source.html">../Dict/Dictionary.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_compare_8h_source.html">../Common/Compare.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_keyvalue_8h_source.html">../Common/Keyvalue.h</a>&quot;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для check_dictionary.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="check__dictionary_8c__incl.png" border="0" usemap="#asrc_2tests_2check__dictionary_8c" alt=""/></div>
+<map name="asrc_2tests_2check__dictionary_8c" id="asrc_2tests_2check__dictionary_8c">
+<area shape="rect" title=" " alt="" coords="405,5,589,32"/>
+<area shape="rect" title=" " alt="" coords="5,80,72,107"/>
+<area shape="rect" href="_dictionary_8h.html" title="Header&#45;файл реализации структуры Словаря на базе Дерева Бинарного Поиска" alt="" coords="97,80,223,107"/>
+<area shape="rect" href="_compare_8h.html" title="Header&#45;файл функций compare." alt="" coords="247,80,398,107"/>
+<area shape="rect" href="_keyvalue_8h.html" title="Header&#45;файл реализации структуры keyvalue." alt="" coords="422,80,573,107"/>
+<area shape="rect" title=" " alt="" coords="597,80,659,107"/>
+<area shape="rect" title=" " alt="" coords="684,80,748,107"/>
+<area shape="rect" title=" " alt="" coords="773,80,833,107"/>
+<area shape="rect" href="_binary_search_tree_8h.html" title="Header&#45;файл реализации структуры Дерева Бинарного Поиска" alt="" coords="73,155,247,181"/>
+</map>
+</div>
+</div>
+<p><a href="check__dictionary_8c_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:ae07cf879461781b6ae48bf6a0d785033"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="check__dictionary_8c.html#ae07cf879461781b6ae48bf6a0d785033">START_TEST</a> (test_dict_creation)</td></tr>
+<tr class="separator:ae07cf879461781b6ae48bf6a0d785033"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63fff77429b1b5195eed4c645b238398"><td class="memItemLeft" align="right" valign="top">END_TEST&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="check__dictionary_8c.html#a63fff77429b1b5195eed4c645b238398">START_TEST</a> (test_dict_destroy)</td></tr>
+<tr class="separator:a63fff77429b1b5195eed4c645b238398"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab46760239346c3240a8f84eedf96731b"><td class="memItemLeft" align="right" valign="top">END_TEST&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="check__dictionary_8c.html#ab46760239346c3240a8f84eedf96731b">START_TEST</a> (test_dict_nonexisting_value_insertion)</td></tr>
+<tr class="separator:ab46760239346c3240a8f84eedf96731b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4d3b5505ad3731db7e381867071850be"><td class="memItemLeft" align="right" valign="top">END_TEST&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="check__dictionary_8c.html#a4d3b5505ad3731db7e381867071850be">START_TEST</a> (test_dict_existing_value_insertion)</td></tr>
+<tr class="separator:a4d3b5505ad3731db7e381867071850be"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13c517ad2d3f54e1997604f2bdb208cf"><td class="memItemLeft" align="right" valign="top">END_TEST&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="check__dictionary_8c.html#a13c517ad2d3f54e1997604f2bdb208cf">START_TEST</a> (test_dict_existing_value_search)</td></tr>
+<tr class="separator:a13c517ad2d3f54e1997604f2bdb208cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04ab1a8b404f95ec1f8e8dc7a5203b4b"><td class="memItemLeft" align="right" valign="top">END_TEST&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="check__dictionary_8c.html#a04ab1a8b404f95ec1f8e8dc7a5203b4b">START_TEST</a> (test_dict_nonexisting_value_search)</td></tr>
+<tr class="separator:a04ab1a8b404f95ec1f8e8dc7a5203b4b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa653398b7f417c324e5b42380fb29608"><td class="memItemLeft" align="right" valign="top">END_TEST&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="check__dictionary_8c.html#aa653398b7f417c324e5b42380fb29608">START_TEST</a> (test_dict_existing_value_deletion)</td></tr>
+<tr class="separator:aa653398b7f417c324e5b42380fb29608"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aafcdb8fdcbba97f5d8f0c677a1788ec5"><td class="memItemLeft" align="right" valign="top">END_TEST&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="check__dictionary_8c.html#aafcdb8fdcbba97f5d8f0c677a1788ec5">START_TEST</a> (test_dict_nonexisting_value_deletion)</td></tr>
+<tr class="separator:aafcdb8fdcbba97f5d8f0c677a1788ec5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad37349bacbd2e1a0937b20ec93d5b912"><td class="memItemLeft" align="right" valign="top">END_TEST&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="check__dictionary_8c.html#ad37349bacbd2e1a0937b20ec93d5b912">START_TEST</a> (test_dict_difftype_value_insertion)</td></tr>
+<tr class="separator:ad37349bacbd2e1a0937b20ec93d5b912"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa675caec1022b649bd5ce0531fb9adec"><td class="memItemLeft" align="right" valign="top">END_TEST Suite *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="check__dictionary_8c.html#aa675caec1022b649bd5ce0531fb9adec">compare_suite</a> (void)</td></tr>
+<tr class="separator:aa675caec1022b649bd5ce0531fb9adec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a840291bc02cba5474a4cb46a9b9566fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="check__dictionary_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main</a> (void)</td></tr>
+<tr class="separator:a840291bc02cba5474a4cb46a9b9566fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Функции</h2>
+<a id="aa675caec1022b649bd5ce0531fb9adec" name="aa675caec1022b649bd5ce0531fb9adec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa675caec1022b649bd5ce0531fb9adec">&#9670;&nbsp;</a></span>compare_suite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">END_TEST Suite * compare_suite </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="check__dictionary_8c_source.html">check_dictionary.c</a> строка <a class="el" href="check__dictionary_8c_source.html#l00101">101</a></p>
+<div class="fragment"><div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>                           {</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>  Suite *s;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  TCase *tc_core;</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>  s = suite_create(<span class="stringliteral">&quot;DictionaryTest&quot;</span>);</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>  tc_core = tcase_create(<span class="stringliteral">&quot;Core&quot;</span>);</div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span> </div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>  tcase_add_test(tc_core, test_dict_creation);</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  tcase_add_test(tc_core, test_dict_destroy);</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  tcase_add_test(tc_core, test_dict_nonexisting_value_insertion);</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>  tcase_add_test(tc_core, test_dict_existing_value_insertion);</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>  tcase_add_test(tc_core, test_dict_existing_value_deletion);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  tcase_add_test(tc_core, test_dict_nonexisting_value_deletion);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>  tcase_add_test(tc_core, test_dict_existing_value_search);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  tcase_add_test(tc_core, test_dict_nonexisting_value_search);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>  tcase_add_test(tc_core, test_dict_difftype_value_insertion);</div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>  suite_add_tcase(s, tc_core);</div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span> </div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>  <span class="keywordflow">return</span> s;</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>}</div>
+</div><!-- fragment -->
+<p class="reference">Используется в <a class="el" href="check__dictionary_8c_source.html#l00122">main()</a>.</p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="check__dictionary_8c_aa675caec1022b649bd5ce0531fb9adec_icgraph.png" border="0" usemap="#acheck__dictionary_8c_aa675caec1022b649bd5ce0531fb9adec_icgraph" alt=""/></div>
+<map name="acheck__dictionary_8c_aa675caec1022b649bd5ce0531fb9adec_icgraph" id="acheck__dictionary_8c_aa675caec1022b649bd5ce0531fb9adec_icgraph">
+<area shape="rect" title=" " alt="" coords="104,5,211,32"/>
+<area shape="rect" href="check__dictionary_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,5,56,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a840291bc02cba5474a4cb46a9b9566fe" name="a840291bc02cba5474a4cb46a9b9566fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a840291bc02cba5474a4cb46a9b9566fe">&#9670;&nbsp;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="check__dictionary_8c_source.html">check_dictionary.c</a> строка <a class="el" href="check__dictionary_8c_source.html#l00122">122</a></p>
+<div class="fragment"><div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span>               {</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>  Suite *s = <a class="code hl_function" href="check__dictionary_8c.html#aa675caec1022b649bd5ce0531fb9adec">compare_suite</a>();</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>  SRunner *runner = srunner_create(s);</div>
+<div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>  srunner_run_all(runner, CK_NORMAL);</div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>  <span class="keywordtype">int</span> no_failed = srunner_ntests_failed(runner);</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>  srunner_free(runner);</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>  <span class="keywordflow">return</span> (no_failed == 0) ? EXIT_SUCCESS : EXIT_FAILURE;</div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>}</div>
+<div class="ttc" id="acheck__dictionary_8c_html_aa675caec1022b649bd5ce0531fb9adec"><div class="ttname"><a href="check__dictionary_8c.html#aa675caec1022b649bd5ce0531fb9adec">compare_suite</a></div><div class="ttdeci">END_TEST Suite * compare_suite(void)</div><div class="ttdef"><b>Definition:</b> <a href="check__dictionary_8c_source.html#l00101">check_dictionary.c:101</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="check__dictionary_8c_source.html#l00101">compare_suite()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="check__dictionary_8c_a840291bc02cba5474a4cb46a9b9566fe_cgraph.png" border="0" usemap="#acheck__dictionary_8c_a840291bc02cba5474a4cb46a9b9566fe_cgraph" alt=""/></div>
+<map name="acheck__dictionary_8c_a840291bc02cba5474a4cb46a9b9566fe_cgraph" id="acheck__dictionary_8c_a840291bc02cba5474a4cb46a9b9566fe_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,56,32"/>
+<area shape="rect" href="check__dictionary_8c.html#aa675caec1022b649bd5ce0531fb9adec" title=" " alt="" coords="104,5,211,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ae07cf879461781b6ae48bf6a0d785033" name="ae07cf879461781b6ae48bf6a0d785033"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae07cf879461781b6ae48bf6a0d785033">&#9670;&nbsp;</a></span>START_TEST() <span class="overload">[1/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">START_TEST </td>
+          <td>(</td>
+          <td class="paramtype">test_dict_creation&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="check__dictionary_8c_source.html">check_dictionary.c</a> строка <a class="el" href="check__dictionary_8c_source.html#l00010">10</a></p>
+<div class="fragment"><div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>                               {</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>  <span class="keyword">struct </span><a class="code hl_struct" href="structdictionary.html">dictionary</a> test = <a class="code hl_function" href="_dictionary_8c.html#a8adc3829a86b98ffd63c9fd9fdd9155d">dictionary_constructor</a>(<a class="code hl_function" href="_compare_8c.html#a59ee43f11a4d3a568d2c3db2d6f363c4">compare_string_keys</a>, <a class="code hl_function" href="_dictionary_8c.html#a8bfe5466e9d78d6107509e31a197c16d">print_keyvalues</a>);</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>  <span class="keywordtype">int</span> val1 = 12;</div>
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  <span class="keywordtype">char</span>* key1 = <span class="stringliteral">&quot;test&quot;</span>;</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  <span class="keywordtype">int</span> val2 = 36;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  <span class="keywordtype">char</span>* key2 = <span class="stringliteral">&quot;kekw&quot;</span>;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  <span class="keyword">struct </span><a class="code hl_struct" href="structkeyvalue.html">keyvalue</a> *kv1 = <a class="code hl_function" href="_keyvalue_8c.html#aaf151f3094bb9103b0054add2d0e43f4">keyvalue_constructor</a>(key1, &amp;val1, <span class="keyword">sizeof</span>(val1));</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  <span class="keyword">struct </span><a class="code hl_struct" href="structkeyvalue.html">keyvalue</a> *kv2 = <a class="code hl_function" href="_keyvalue_8c.html#aaf151f3094bb9103b0054add2d0e43f4">keyvalue_constructor</a>(key2, &amp;val2, <span class="keyword">sizeof</span>(val2));</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  ck_assert_uint_eq(test.<a class="code hl_variable" href="structdictionary.html#abdf1acceec7f94e7ae6b760ce8957e71">compare</a>(kv1, kv2), <a class="code hl_function" href="_compare_8c.html#a59ee43f11a4d3a568d2c3db2d6f363c4">compare_string_keys</a>(kv1, kv2));</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>} END_TEST</div>
+<div class="ttc" id="a_compare_8c_html_a59ee43f11a4d3a568d2c3db2d6f363c4"><div class="ttname"><a href="_compare_8c.html#a59ee43f11a4d3a568d2c3db2d6f363c4">compare_string_keys</a></div><div class="ttdeci">int compare_string_keys(void *entry_one, void *entry_two)</div><div class="ttdoc">Сравнение для реализованного типа keyvalue.</div><div class="ttdef"><b>Definition:</b> <a href="_compare_8c_source.html#l00043">Compare.c:43</a></div></div>
+<div class="ttc" id="a_dictionary_8c_html_a8adc3829a86b98ffd63c9fd9fdd9155d"><div class="ttname"><a href="_dictionary_8c.html#a8adc3829a86b98ffd63c9fd9fdd9155d">dictionary_constructor</a></div><div class="ttdeci">struct dictionary dictionary_constructor(int(*compare)(void *entry_one, void *entry_two), void(*print)(void *data))</div><div class="ttdoc">Конструктор dictionary.</div><div class="ttdef"><b>Definition:</b> <a href="_dictionary_8c_source.html#l00029">Dictionary.c:29</a></div></div>
+<div class="ttc" id="a_dictionary_8c_html_a8bfe5466e9d78d6107509e31a197c16d"><div class="ttname"><a href="_dictionary_8c.html#a8bfe5466e9d78d6107509e31a197c16d">print_keyvalues</a></div><div class="ttdeci">void print_keyvalues(void *data)</div><div class="ttdoc">Вариант реализации функции вывода элементов словаря</div><div class="ttdef"><b>Definition:</b> <a href="_dictionary_8c_source.html#l00144">Dictionary.c:144</a></div></div>
+<div class="ttc" id="a_keyvalue_8c_html_aaf151f3094bb9103b0054add2d0e43f4"><div class="ttname"><a href="_keyvalue_8c.html#aaf151f3094bb9103b0054add2d0e43f4">keyvalue_constructor</a></div><div class="ttdeci">struct keyvalue * keyvalue_constructor(char *key, void *value, unsigned long size)</div><div class="ttdoc">Конструктор keyvalue.</div><div class="ttdef"><b>Definition:</b> <a href="_keyvalue_8c_source.html#l00023">Keyvalue.c:23</a></div></div>
+<div class="ttc" id="astructdictionary_html"><div class="ttname"><a href="structdictionary.html">dictionary</a></div><div class="ttdoc">Абстрактная структура словаря</div><div class="ttdef"><b>Definition:</b> <a href="_dictionary_8h_source.html#l00018">Dictionary.h:18</a></div></div>
+<div class="ttc" id="astructdictionary_html_abdf1acceec7f94e7ae6b760ce8957e71"><div class="ttname"><a href="structdictionary.html#abdf1acceec7f94e7ae6b760ce8957e71">dictionary::compare</a></div><div class="ttdeci">int(* compare)(void *data_one, void *data_two)</div><div class="ttdef"><b>Definition:</b> <a href="_dictionary_8h_source.html#l00022">Dictionary.h:22</a></div></div>
+<div class="ttc" id="astructkeyvalue_html"><div class="ttname"><a href="structkeyvalue.html">keyvalue</a></div><div class="ttdoc">Структура, хранящая ключ строку и свободный указатель на значение</div><div class="ttdef"><b>Definition:</b> <a href="_keyvalue_8h_source.html#l00016">Keyvalue.h:16</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="_dictionary_8h_source.html#l00022">dictionary::compare</a>, <a class="el" href="_compare_8c_source.html#l00043">compare_string_keys()</a>, <a class="el" href="_dictionary_8c_source.html#l00029">dictionary_constructor()</a>, <a class="el" href="_keyvalue_8c_source.html#l00023">keyvalue_constructor()</a> и <a class="el" href="_dictionary_8c_source.html#l00144">print_keyvalues()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="check__dictionary_8c_ae07cf879461781b6ae48bf6a0d785033_cgraph.png" border="0" usemap="#acheck__dictionary_8c_ae07cf879461781b6ae48bf6a0d785033_cgraph" alt=""/></div>
+<map name="acheck__dictionary_8c_ae07cf879461781b6ae48bf6a0d785033_cgraph" id="acheck__dictionary_8c_ae07cf879461781b6ae48bf6a0d785033_cgraph">
+<area shape="rect" title=" " alt="" coords="5,117,111,144"/>
+<area shape="rect" href="_compare_8c.html#a59ee43f11a4d3a568d2c3db2d6f363c4" title="Сравнение для реализованного типа keyvalue." alt="" coords="161,41,306,68"/>
+<area shape="rect" href="_dictionary_8c.html#a8adc3829a86b98ffd63c9fd9fdd9155d" title="Конструктор dictionary." alt="" coords="159,143,308,169"/>
+<area shape="rect" href="_keyvalue_8c.html#aaf151f3094bb9103b0054add2d0e43f4" title="Конструктор keyvalue." alt="" coords="497,80,643,107"/>
+<area shape="rect" href="_dictionary_8c.html#a8bfe5466e9d78d6107509e31a197c16d" title="Вариант реализации функции вывода элементов словаря" alt="" coords="177,193,289,220"/>
+<area shape="rect" href="_compare_8c.html#adbb783ff4e2a922d5bea0b7a84bea4d6" title="Сравнение для int." alt="" coords="706,217,778,244"/>
+<area shape="rect" href="_dictionary_8c.html#a7fb2945dac6b70e2a6216ef0984b83b0" title="Добавление элемента в словарь" alt="" coords="361,41,444,68"/>
+<area shape="rect" href="_dictionary_8c.html#a61eb8ca40b7139cfb4e674229e6e9d72" title="Удаление элемента в словаре" alt="" coords="356,143,449,169"/>
+<area shape="rect" href="_dictionary_8c.html#a4c458dc3aa1f39770a134ad39cbd07ce" title="Поиск элемента в словаре" alt="" coords="358,193,447,220"/>
+<area shape="rect" href="_binary_search_tree_8c.html#aaf66bb89347a6666796a4b73a0b591a5" title="Вставка элемента" alt="" coords="543,29,597,56"/>
+<area shape="rect" href="_binary_search_tree_8c.html#a0f07215c1e0085d7bf68dd5b7f104032" title="Вставка элемента" alt="" coords="701,29,783,56"/>
+<area shape="rect" href="_binary_search_tree_8c.html#ad423ecd7a38d253a6230ad78c75a7747" title="Вставка элемента" alt="" coords="533,155,607,181"/>
+<area shape="rect" href="_binary_search_tree_8c.html#a081f1ef06ae37bd96bd8bbfb5ae46bf9" title="Поиск минимального элемента в поддереве" alt="" coords="691,155,793,181"/>
+<area shape="rect" href="_binary_search_tree_8c.html#a55664d31f1e7175febadee53e11b8fc5" title="Поиск элемента в дереве" alt="" coords="539,229,601,256"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a63fff77429b1b5195eed4c645b238398" name="a63fff77429b1b5195eed4c645b238398"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a63fff77429b1b5195eed4c645b238398">&#9670;&nbsp;</a></span>START_TEST() <span class="overload">[2/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">END_TEST START_TEST </td>
+          <td>(</td>
+          <td class="paramtype">test_dict_destroy&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="check__dictionary_8c_source.html">check_dictionary.c</a> строка <a class="el" href="check__dictionary_8c_source.html#l00021">21</a></p>
+<div class="fragment"><div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>                              {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <span class="keyword">struct </span><a class="code hl_struct" href="structdictionary.html">dictionary</a> test = <a class="code hl_function" href="_dictionary_8c.html#a8adc3829a86b98ffd63c9fd9fdd9155d">dictionary_constructor</a>(<a class="code hl_function" href="_compare_8c.html#a59ee43f11a4d3a568d2c3db2d6f363c4">compare_string_keys</a>, <a class="code hl_function" href="_dictionary_8c.html#a8bfe5466e9d78d6107509e31a197c16d">print_keyvalues</a>);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <span class="keywordtype">double</span> val6 = 4321.21;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  test.<a class="code hl_variable" href="structdictionary.html#aa0531fe7c9f688e136e1765f4eb0d982">insert</a>(&amp;test, <span class="stringliteral">&quot;allah&quot;</span>, &amp;val6, <span class="keyword">sizeof</span>(val6));</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  <a class="code hl_function" href="_dictionary_8c.html#accd261aab84d834443671641317436c1">dictionary_destructor</a>(&amp;test);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  ck_assert_ptr_eq(test.<a class="code hl_variable" href="structdictionary.html#a86a703e342eb16e287c0d2bed88f317e">search</a>(&amp;test, <span class="stringliteral">&quot;allah&quot;</span>), NULL);</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>} END_TEST</div>
+<div class="ttc" id="a_dictionary_8c_html_accd261aab84d834443671641317436c1"><div class="ttname"><a href="_dictionary_8c.html#accd261aab84d834443671641317436c1">dictionary_destructor</a></div><div class="ttdeci">void dictionary_destructor(struct dictionary *dictionary)</div><div class="ttdoc">Деструктор dictionary.</div><div class="ttdef"><b>Definition:</b> <a href="_dictionary_8c_source.html#l00047">Dictionary.c:47</a></div></div>
+<div class="ttc" id="astructdictionary_html_a86a703e342eb16e287c0d2bed88f317e"><div class="ttname"><a href="structdictionary.html#a86a703e342eb16e287c0d2bed88f317e">dictionary::search</a></div><div class="ttdeci">struct keyvalue *(* search)(struct dictionary *dictionary, char *key)</div><div class="ttdef"><b>Definition:</b> <a href="_dictionary_8h_source.html#l00024">Dictionary.h:26</a></div></div>
+<div class="ttc" id="astructdictionary_html_aa0531fe7c9f688e136e1765f4eb0d982"><div class="ttname"><a href="structdictionary.html#aa0531fe7c9f688e136e1765f4eb0d982">dictionary::insert</a></div><div class="ttdeci">void(* insert)(struct dictionary *dictionary, char *key, void *value, unsigned long value_size)</div><div class="ttdef"><b>Definition:</b> <a href="_dictionary_8h_source.html#l00024">Dictionary.h:24</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="_compare_8c_source.html#l00043">compare_string_keys()</a>, <a class="el" href="_dictionary_8c_source.html#l00029">dictionary_constructor()</a>, <a class="el" href="_dictionary_8c_source.html#l00047">dictionary_destructor()</a>, <a class="el" href="_dictionary_8h_source.html#l00024">dictionary::insert</a>, <a class="el" href="_dictionary_8c_source.html#l00144">print_keyvalues()</a> и <a class="el" href="_dictionary_8h_source.html#l00026">dictionary::search</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="check__dictionary_8c_a63fff77429b1b5195eed4c645b238398_cgraph.png" border="0" usemap="#acheck__dictionary_8c_a63fff77429b1b5195eed4c645b238398_cgraph" alt=""/></div>
+<map name="acheck__dictionary_8c_a63fff77429b1b5195eed4c645b238398_cgraph" id="acheck__dictionary_8c_a63fff77429b1b5195eed4c645b238398_cgraph">
+<area shape="rect" title=" " alt="" coords="5,243,111,269"/>
+<area shape="rect" href="_compare_8c.html#a59ee43f11a4d3a568d2c3db2d6f363c4" title="Сравнение для реализованного типа keyvalue." alt="" coords="161,167,306,193"/>
+<area shape="rect" href="_dictionary_8c.html#a8adc3829a86b98ffd63c9fd9fdd9155d" title="Конструктор dictionary." alt="" coords="159,217,308,244"/>
+<area shape="rect" href="_dictionary_8c.html#accd261aab84d834443671641317436c1" title="Деструктор dictionary." alt="" coords="162,268,305,295"/>
+<area shape="rect" href="_dictionary_8c.html#a8bfe5466e9d78d6107509e31a197c16d" title="Вариант реализации функции вывода элементов словаря" alt="" coords="177,319,289,345"/>
+<area shape="rect" href="_compare_8c.html#adbb783ff4e2a922d5bea0b7a84bea4d6" title="Сравнение для int." alt="" coords="750,217,822,244"/>
+<area shape="rect" href="_dictionary_8c.html#a7fb2945dac6b70e2a6216ef0984b83b0" title="Добавление элемента в словарь" alt="" coords="383,80,466,107"/>
+<area shape="rect" href="_dictionary_8c.html#a61eb8ca40b7139cfb4e674229e6e9d72" title="Удаление элемента в словаре" alt="" coords="378,155,471,181"/>
+<area shape="rect" href="_dictionary_8c.html#a4c458dc3aa1f39770a134ad39cbd07ce" title="Поиск элемента в словаре" alt="" coords="380,217,469,244"/>
+<area shape="rect" href="_binary_search_tree_8c.html#aaf66bb89347a6666796a4b73a0b591a5" title="Вставка элемента" alt="" coords="587,29,641,56"/>
+<area shape="rect" href="_keyvalue_8c.html#aaf151f3094bb9103b0054add2d0e43f4" title="Конструктор keyvalue." alt="" coords="541,80,687,107"/>
+<area shape="rect" href="_binary_search_tree_8c.html#a0f07215c1e0085d7bf68dd5b7f104032" title="Вставка элемента" alt="" coords="745,29,827,56"/>
+<area shape="rect" href="_binary_search_tree_8c.html#ad423ecd7a38d253a6230ad78c75a7747" title="Вставка элемента" alt="" coords="577,155,651,181"/>
+<area shape="rect" href="_binary_search_tree_8c.html#a081f1ef06ae37bd96bd8bbfb5ae46bf9" title="Поиск минимального элемента в поддереве" alt="" coords="735,155,837,181"/>
+<area shape="rect" href="_binary_search_tree_8c.html#a55664d31f1e7175febadee53e11b8fc5" title="Поиск элемента в дереве" alt="" coords="583,229,645,256"/>
+<area shape="rect" href="_dictionary_8c.html#a1e17f8287d87276f750271464925a206" title="рекурсивное удаление элементов ДБП" alt="" coords="356,355,493,397"/>
+<area shape="rect" href="_keyvalue_8c.html#a45054f967062d637b292a8411bbd07e0" title="Деструктор keyvalue." alt="" coords="545,363,683,389"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad37349bacbd2e1a0937b20ec93d5b912" name="ad37349bacbd2e1a0937b20ec93d5b912"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad37349bacbd2e1a0937b20ec93d5b912">&#9670;&nbsp;</a></span>START_TEST() <span class="overload">[3/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">END_TEST START_TEST </td>
+          <td>(</td>
+          <td class="paramtype">test_dict_difftype_value_insertion&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="check__dictionary_8c_source.html">check_dictionary.c</a> строка <a class="el" href="check__dictionary_8c_source.html#l00089">89</a></p>
+<div class="fragment"><div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>                                               {</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  <span class="keyword">struct </span><a class="code hl_struct" href="structdictionary.html">dictionary</a> test = <a class="code hl_function" href="_dictionary_8c.html#a8adc3829a86b98ffd63c9fd9fdd9155d">dictionary_constructor</a>(<a class="code hl_function" href="_compare_8c.html#a59ee43f11a4d3a568d2c3db2d6f363c4">compare_string_keys</a>, <a class="code hl_function" href="_dictionary_8c.html#a8bfe5466e9d78d6107509e31a197c16d">print_keyvalues</a>);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  <span class="keywordtype">long</span> <span class="keywordtype">long</span> val1 = 4358923;</div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  <span class="keywordtype">int</span> val2 = 213;</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  <span class="keywordtype">char</span>* key1 = <span class="stringliteral">&quot;test&quot;</span>;</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  <span class="keywordtype">char</span>* key2 = <span class="stringliteral">&quot;jesus&quot;</span>;</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  test.<a class="code hl_variable" href="structdictionary.html#aa0531fe7c9f688e136e1765f4eb0d982">insert</a>(&amp;test, key1, &amp;val1, <span class="keyword">sizeof</span>(val1));</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  test.<a class="code hl_variable" href="structdictionary.html#aa0531fe7c9f688e136e1765f4eb0d982">insert</a>(&amp;test, key2, &amp;val2, <span class="keyword">sizeof</span>(val2));</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  ck_assert_uint_eq(*(<span class="keywordtype">int</span> *)(test.<a class="code hl_variable" href="structdictionary.html#a86a703e342eb16e287c0d2bed88f317e">search</a>(&amp;test, key2)-&gt;<a class="code hl_variable" href="structkeyvalue.html#a963e7b2cc60458177f86a60df21ea421">value</a>), val2);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  ck_assert_double_eq(*(<span class="keywordtype">long</span> <span class="keywordtype">long</span> *)(test.<a class="code hl_variable" href="structdictionary.html#a86a703e342eb16e287c0d2bed88f317e">search</a>(&amp;test, key1)-&gt;<a class="code hl_variable" href="structkeyvalue.html#a963e7b2cc60458177f86a60df21ea421">value</a>), val1);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>} END_TEST</div>
+<div class="ttc" id="astructkeyvalue_html_a963e7b2cc60458177f86a60df21ea421"><div class="ttname"><a href="structkeyvalue.html#a963e7b2cc60458177f86a60df21ea421">keyvalue::value</a></div><div class="ttdeci">void * value</div><div class="ttdef"><b>Definition:</b> <a href="_keyvalue_8h_source.html#l00020">Keyvalue.h:20</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="_compare_8c_source.html#l00043">compare_string_keys()</a>, <a class="el" href="_dictionary_8c_source.html#l00029">dictionary_constructor()</a>, <a class="el" href="_dictionary_8h_source.html#l00024">dictionary::insert</a>, <a class="el" href="_dictionary_8c_source.html#l00144">print_keyvalues()</a>, <a class="el" href="_dictionary_8h_source.html#l00026">dictionary::search</a> и <a class="el" href="_keyvalue_8h_source.html#l00020">keyvalue::value</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="check__dictionary_8c_ad37349bacbd2e1a0937b20ec93d5b912_cgraph.png" border="0" usemap="#acheck__dictionary_8c_ad37349bacbd2e1a0937b20ec93d5b912_cgraph" alt=""/></div>
+<map name="acheck__dictionary_8c_ad37349bacbd2e1a0937b20ec93d5b912_cgraph" id="acheck__dictionary_8c_ad37349bacbd2e1a0937b20ec93d5b912_cgraph">
+<area shape="rect" title=" " alt="" coords="5,180,111,207"/>
+<area shape="rect" href="_compare_8c.html#a59ee43f11a4d3a568d2c3db2d6f363c4" title="Сравнение для реализованного типа keyvalue." alt="" coords="161,129,306,156"/>
+<area shape="rect" href="_dictionary_8c.html#a8adc3829a86b98ffd63c9fd9fdd9155d" title="Конструктор dictionary." alt="" coords="159,180,308,207"/>
+<area shape="rect" href="_dictionary_8c.html#a8bfe5466e9d78d6107509e31a197c16d" title="Вариант реализации функции вывода элементов словаря" alt="" coords="177,231,289,257"/>
+<area shape="rect" href="_compare_8c.html#adbb783ff4e2a922d5bea0b7a84bea4d6" title="Сравнение для int." alt="" coords="706,155,778,181"/>
+<area shape="rect" href="_dictionary_8c.html#a7fb2945dac6b70e2a6216ef0984b83b0" title="Добавление элемента в словарь" alt="" coords="361,104,444,131"/>
+<area shape="rect" href="_dictionary_8c.html#a61eb8ca40b7139cfb4e674229e6e9d72" title="Удаление элемента в словаре" alt="" coords="356,256,449,283"/>
+<area shape="rect" href="_dictionary_8c.html#a4c458dc3aa1f39770a134ad39cbd07ce" title="Поиск элемента в словаре" alt="" coords="358,155,447,181"/>
+<area shape="rect" href="_binary_search_tree_8c.html#aaf66bb89347a6666796a4b73a0b591a5" title="Вставка элемента" alt="" coords="543,29,597,56"/>
+<area shape="rect" href="_keyvalue_8c.html#aaf151f3094bb9103b0054add2d0e43f4" title="Конструктор keyvalue." alt="" coords="497,155,643,181"/>
+<area shape="rect" href="_binary_search_tree_8c.html#a0f07215c1e0085d7bf68dd5b7f104032" title="Вставка элемента" alt="" coords="701,29,783,56"/>
+<area shape="rect" href="_binary_search_tree_8c.html#ad423ecd7a38d253a6230ad78c75a7747" title="Вставка элемента" alt="" coords="533,280,607,307"/>
+<area shape="rect" href="_binary_search_tree_8c.html#a081f1ef06ae37bd96bd8bbfb5ae46bf9" title="Поиск минимального элемента в поддереве" alt="" coords="691,280,793,307"/>
+<area shape="rect" href="_binary_search_tree_8c.html#a55664d31f1e7175febadee53e11b8fc5" title="Поиск элемента в дереве" alt="" coords="539,104,601,131"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aa653398b7f417c324e5b42380fb29608" name="aa653398b7f417c324e5b42380fb29608"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa653398b7f417c324e5b42380fb29608">&#9670;&nbsp;</a></span>START_TEST() <span class="overload">[4/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">END_TEST START_TEST </td>
+          <td>(</td>
+          <td class="paramtype">test_dict_existing_value_deletion&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="check__dictionary_8c_source.html">check_dictionary.c</a> строка <a class="el" href="check__dictionary_8c_source.html#l00064">64</a></p>
+<div class="fragment"><div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>                                              {</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="keyword">struct </span><a class="code hl_struct" href="structdictionary.html">dictionary</a> test = <a class="code hl_function" href="_dictionary_8c.html#a8adc3829a86b98ffd63c9fd9fdd9155d">dictionary_constructor</a>(<a class="code hl_function" href="_compare_8c.html#a59ee43f11a4d3a568d2c3db2d6f363c4">compare_string_keys</a>, <a class="code hl_function" href="_dictionary_8c.html#a8bfe5466e9d78d6107509e31a197c16d">print_keyvalues</a>);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <span class="keywordtype">double</span> val1 = 435.23;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  <span class="keywordtype">double</span> val2 = 213.98;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  <span class="keywordtype">char</span>* key1 = <span class="stringliteral">&quot;test&quot;</span>;</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  <span class="keywordtype">char</span>* key2 = <span class="stringliteral">&quot;jesus&quot;</span>;</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  test.<a class="code hl_variable" href="structdictionary.html#aa0531fe7c9f688e136e1765f4eb0d982">insert</a>(&amp;test, key1, &amp;val1, <span class="keyword">sizeof</span>(val1));</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  test.<a class="code hl_variable" href="structdictionary.html#aa0531fe7c9f688e136e1765f4eb0d982">insert</a>(&amp;test, key2, &amp;val2, <span class="keyword">sizeof</span>(val2));</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  test.<a class="code hl_variable" href="structdictionary.html#a14ef5554661a41bba11083f495ba71a4">remove</a>(&amp;test, key2);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>  ck_assert_ptr_eq(test.<a class="code hl_variable" href="structdictionary.html#a86a703e342eb16e287c0d2bed88f317e">search</a>(&amp;test, key2), NULL);</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>} END_TEST</div>
+<div class="ttc" id="astructdictionary_html_a14ef5554661a41bba11083f495ba71a4"><div class="ttname"><a href="structdictionary.html#a14ef5554661a41bba11083f495ba71a4">dictionary::remove</a></div><div class="ttdeci">void(* remove)(struct dictionary *dictionary, char *key)</div><div class="ttdef"><b>Definition:</b> <a href="_dictionary_8h_source.html#l00028">Dictionary.h:28</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="_compare_8c_source.html#l00043">compare_string_keys()</a>, <a class="el" href="_dictionary_8c_source.html#l00029">dictionary_constructor()</a>, <a class="el" href="_dictionary_8h_source.html#l00024">dictionary::insert</a>, <a class="el" href="_dictionary_8c_source.html#l00144">print_keyvalues()</a>, <a class="el" href="_dictionary_8h_source.html#l00028">dictionary::remove</a> и <a class="el" href="_dictionary_8h_source.html#l00026">dictionary::search</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="check__dictionary_8c_aa653398b7f417c324e5b42380fb29608_cgraph.png" border="0" usemap="#acheck__dictionary_8c_aa653398b7f417c324e5b42380fb29608_cgraph" alt=""/></div>
+<map name="acheck__dictionary_8c_aa653398b7f417c324e5b42380fb29608_cgraph" id="acheck__dictionary_8c_aa653398b7f417c324e5b42380fb29608_cgraph">
+<area shape="rect" title=" " alt="" coords="5,180,111,207"/>
+<area shape="rect" href="_compare_8c.html#a59ee43f11a4d3a568d2c3db2d6f363c4" title="Сравнение для реализованного типа keyvalue." alt="" coords="161,129,306,156"/>
+<area shape="rect" href="_dictionary_8c.html#a8adc3829a86b98ffd63c9fd9fdd9155d" title="Конструктор dictionary." alt="" coords="159,180,308,207"/>
+<area shape="rect" href="_dictionary_8c.html#a8bfe5466e9d78d6107509e31a197c16d" title="Вариант реализации функции вывода элементов словаря" alt="" coords="177,231,289,257"/>
+<area shape="rect" href="_compare_8c.html#adbb783ff4e2a922d5bea0b7a84bea4d6" title="Сравнение для int." alt="" coords="706,155,778,181"/>
+<area shape="rect" href="_dictionary_8c.html#a7fb2945dac6b70e2a6216ef0984b83b0" title="Добавление элемента в словарь" alt="" coords="361,104,444,131"/>
+<area shape="rect" href="_dictionary_8c.html#a61eb8ca40b7139cfb4e674229e6e9d72" title="Удаление элемента в словаре" alt="" coords="356,256,449,283"/>
+<area shape="rect" href="_dictionary_8c.html#a4c458dc3aa1f39770a134ad39cbd07ce" title="Поиск элемента в словаре" alt="" coords="358,155,447,181"/>
+<area shape="rect" href="_binary_search_tree_8c.html#aaf66bb89347a6666796a4b73a0b591a5" title="Вставка элемента" alt="" coords="543,29,597,56"/>
+<area shape="rect" href="_keyvalue_8c.html#aaf151f3094bb9103b0054add2d0e43f4" title="Конструктор keyvalue." alt="" coords="497,155,643,181"/>
+<area shape="rect" href="_binary_search_tree_8c.html#a0f07215c1e0085d7bf68dd5b7f104032" title="Вставка элемента" alt="" coords="701,29,783,56"/>
+<area shape="rect" href="_binary_search_tree_8c.html#ad423ecd7a38d253a6230ad78c75a7747" title="Вставка элемента" alt="" coords="533,280,607,307"/>
+<area shape="rect" href="_binary_search_tree_8c.html#a081f1ef06ae37bd96bd8bbfb5ae46bf9" title="Поиск минимального элемента в поддереве" alt="" coords="691,280,793,307"/>
+<area shape="rect" href="_binary_search_tree_8c.html#a55664d31f1e7175febadee53e11b8fc5" title="Поиск элемента в дереве" alt="" coords="539,104,601,131"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4d3b5505ad3731db7e381867071850be" name="a4d3b5505ad3731db7e381867071850be"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4d3b5505ad3731db7e381867071850be">&#9670;&nbsp;</a></span>START_TEST() <span class="overload">[5/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">END_TEST START_TEST </td>
+          <td>(</td>
+          <td class="paramtype">test_dict_existing_value_insertion&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="check__dictionary_8c_source.html">check_dictionary.c</a> строка <a class="el" href="check__dictionary_8c_source.html#l00037">37</a></p>
+<div class="fragment"><div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                                               {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keyword">struct </span><a class="code hl_struct" href="structdictionary.html">dictionary</a> test = <a class="code hl_function" href="_dictionary_8c.html#a8adc3829a86b98ffd63c9fd9fdd9155d">dictionary_constructor</a>(<a class="code hl_function" href="_compare_8c.html#a59ee43f11a4d3a568d2c3db2d6f363c4">compare_string_keys</a>, <a class="code hl_function" href="_dictionary_8c.html#a8bfe5466e9d78d6107509e31a197c16d">print_keyvalues</a>);</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keywordtype">double</span> val1 = 435.23;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  <span class="keywordtype">double</span> val2 = 213.98;</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  <span class="keywordtype">char</span>* key1 = <span class="stringliteral">&quot;test&quot;</span>;</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  test.<a class="code hl_variable" href="structdictionary.html#aa0531fe7c9f688e136e1765f4eb0d982">insert</a>(&amp;test, key1, &amp;val1, <span class="keyword">sizeof</span>(val1));</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>  ck_assert_double_eq(*(<span class="keywordtype">double</span> *)(((<span class="keyword">struct</span> <a class="code hl_struct" href="structkeyvalue.html">keyvalue</a> *)test.<a class="code hl_variable" href="structdictionary.html#ac6c89915706cac6d89dbed1ed07d46d6">root</a>-&gt;<a class="code hl_variable" href="structnode.html#ae82853bbf3b0d2b71de205ae40799555">data</a>)-&gt;value), val1);</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  test.<a class="code hl_variable" href="structdictionary.html#aa0531fe7c9f688e136e1765f4eb0d982">insert</a>(&amp;test, key1, &amp;val2, <span class="keyword">sizeof</span>(val2));</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  ck_assert_double_eq(*(<span class="keywordtype">double</span> *)(((<span class="keyword">struct</span> <a class="code hl_struct" href="structkeyvalue.html">keyvalue</a> *)test.<a class="code hl_variable" href="structdictionary.html#ac6c89915706cac6d89dbed1ed07d46d6">root</a>-&gt;<a class="code hl_variable" href="structnode.html#ae82853bbf3b0d2b71de205ae40799555">data</a>)-&gt;value), val2);</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>} END_TEST</div>
+<div class="ttc" id="astructdictionary_html_ac6c89915706cac6d89dbed1ed07d46d6"><div class="ttname"><a href="structdictionary.html#ac6c89915706cac6d89dbed1ed07d46d6">dictionary::root</a></div><div class="ttdeci">struct node * root</div><div class="ttdef"><b>Definition:</b> <a href="_dictionary_8h_source.html#l00020">Dictionary.h:20</a></div></div>
+<div class="ttc" id="astructnode_html_ae82853bbf3b0d2b71de205ae40799555"><div class="ttname"><a href="structnode.html#ae82853bbf3b0d2b71de205ae40799555">node::data</a></div><div class="ttdeci">void * data</div><div class="ttdef"><b>Definition:</b> <a href="_binary_search_tree_8h_source.html#l00018">BinarySearchTree.h:18</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="_compare_8c_source.html#l00043">compare_string_keys()</a>, <a class="el" href="_binary_search_tree_8h_source.html#l00018">node::data</a>, <a class="el" href="_dictionary_8c_source.html#l00029">dictionary_constructor()</a>, <a class="el" href="_dictionary_8h_source.html#l00024">dictionary::insert</a>, <a class="el" href="_dictionary_8c_source.html#l00144">print_keyvalues()</a> и <a class="el" href="_dictionary_8h_source.html#l00020">dictionary::root</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="check__dictionary_8c_a4d3b5505ad3731db7e381867071850be_cgraph.png" border="0" usemap="#acheck__dictionary_8c_a4d3b5505ad3731db7e381867071850be_cgraph" alt=""/></div>
+<map name="acheck__dictionary_8c_a4d3b5505ad3731db7e381867071850be_cgraph" id="acheck__dictionary_8c_a4d3b5505ad3731db7e381867071850be_cgraph">
+<area shape="rect" title=" " alt="" coords="5,180,111,207"/>
+<area shape="rect" href="_compare_8c.html#a59ee43f11a4d3a568d2c3db2d6f363c4" title="Сравнение для реализованного типа keyvalue." alt="" coords="161,129,306,156"/>
+<area shape="rect" href="_dictionary_8c.html#a8adc3829a86b98ffd63c9fd9fdd9155d" title="Конструктор dictionary." alt="" coords="159,180,308,207"/>
+<area shape="rect" href="_dictionary_8c.html#a8bfe5466e9d78d6107509e31a197c16d" title="Вариант реализации функции вывода элементов словаря" alt="" coords="177,231,289,257"/>
+<area shape="rect" href="_compare_8c.html#adbb783ff4e2a922d5bea0b7a84bea4d6" title="Сравнение для int." alt="" coords="706,155,778,181"/>
+<area shape="rect" href="_dictionary_8c.html#a7fb2945dac6b70e2a6216ef0984b83b0" title="Добавление элемента в словарь" alt="" coords="361,104,444,131"/>
+<area shape="rect" href="_dictionary_8c.html#a61eb8ca40b7139cfb4e674229e6e9d72" title="Удаление элемента в словаре" alt="" coords="356,256,449,283"/>
+<area shape="rect" href="_dictionary_8c.html#a4c458dc3aa1f39770a134ad39cbd07ce" title="Поиск элемента в словаре" alt="" coords="358,155,447,181"/>
+<area shape="rect" href="_binary_search_tree_8c.html#aaf66bb89347a6666796a4b73a0b591a5" title="Вставка элемента" alt="" coords="543,29,597,56"/>
+<area shape="rect" href="_keyvalue_8c.html#aaf151f3094bb9103b0054add2d0e43f4" title="Конструктор keyvalue." alt="" coords="497,155,643,181"/>
+<area shape="rect" href="_binary_search_tree_8c.html#a0f07215c1e0085d7bf68dd5b7f104032" title="Вставка элемента" alt="" coords="701,29,783,56"/>
+<area shape="rect" href="_binary_search_tree_8c.html#ad423ecd7a38d253a6230ad78c75a7747" title="Вставка элемента" alt="" coords="533,280,607,307"/>
+<area shape="rect" href="_binary_search_tree_8c.html#a081f1ef06ae37bd96bd8bbfb5ae46bf9" title="Поиск минимального элемента в поддереве" alt="" coords="691,280,793,307"/>
+<area shape="rect" href="_binary_search_tree_8c.html#a55664d31f1e7175febadee53e11b8fc5" title="Поиск элемента в дереве" alt="" coords="539,104,601,131"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a13c517ad2d3f54e1997604f2bdb208cf" name="a13c517ad2d3f54e1997604f2bdb208cf"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13c517ad2d3f54e1997604f2bdb208cf">&#9670;&nbsp;</a></span>START_TEST() <span class="overload">[6/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">END_TEST START_TEST </td>
+          <td>(</td>
+          <td class="paramtype">test_dict_existing_value_search&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="check__dictionary_8c_source.html">check_dictionary.c</a> строка <a class="el" href="check__dictionary_8c_source.html#l00048">48</a></p>
+<div class="fragment"><div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>                                            {</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <span class="keyword">struct </span><a class="code hl_struct" href="structdictionary.html">dictionary</a> test = <a class="code hl_function" href="_dictionary_8c.html#a8adc3829a86b98ffd63c9fd9fdd9155d">dictionary_constructor</a>(<a class="code hl_function" href="_compare_8c.html#a59ee43f11a4d3a568d2c3db2d6f363c4">compare_string_keys</a>, <a class="code hl_function" href="_dictionary_8c.html#a8bfe5466e9d78d6107509e31a197c16d">print_keyvalues</a>);</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  <span class="keywordtype">double</span> val1 = 435.23;</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>  <span class="keywordtype">char</span>* key1 = <span class="stringliteral">&quot;test&quot;</span>;</div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>  test.<a class="code hl_variable" href="structdictionary.html#aa0531fe7c9f688e136e1765f4eb0d982">insert</a>(&amp;test, key1, &amp;val1, <span class="keyword">sizeof</span>(val1));</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  ck_assert_ptr_ne(test.<a class="code hl_variable" href="structdictionary.html#a86a703e342eb16e287c0d2bed88f317e">search</a>(&amp;test, key1), NULL);</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>} END_TEST</div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="_compare_8c_source.html#l00043">compare_string_keys()</a>, <a class="el" href="_dictionary_8c_source.html#l00029">dictionary_constructor()</a>, <a class="el" href="_dictionary_8h_source.html#l00024">dictionary::insert</a>, <a class="el" href="_dictionary_8c_source.html#l00144">print_keyvalues()</a> и <a class="el" href="_dictionary_8h_source.html#l00026">dictionary::search</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="check__dictionary_8c_a13c517ad2d3f54e1997604f2bdb208cf_cgraph.png" border="0" usemap="#acheck__dictionary_8c_a13c517ad2d3f54e1997604f2bdb208cf_cgraph" alt=""/></div>
+<map name="acheck__dictionary_8c_a13c517ad2d3f54e1997604f2bdb208cf_cgraph" id="acheck__dictionary_8c_a13c517ad2d3f54e1997604f2bdb208cf_cgraph">
+<area shape="rect" title=" " alt="" coords="5,180,111,207"/>
+<area shape="rect" href="_compare_8c.html#a59ee43f11a4d3a568d2c3db2d6f363c4" title="Сравнение для реализованного типа keyvalue." alt="" coords="161,129,306,156"/>
+<area shape="rect" href="_dictionary_8c.html#a8adc3829a86b98ffd63c9fd9fdd9155d" title="Конструктор dictionary." alt="" coords="159,180,308,207"/>
+<area shape="rect" href="_dictionary_8c.html#a8bfe5466e9d78d6107509e31a197c16d" title="Вариант реализации функции вывода элементов словаря" alt="" coords="177,231,289,257"/>
+<area shape="rect" href="_compare_8c.html#adbb783ff4e2a922d5bea0b7a84bea4d6" title="Сравнение для int." alt="" coords="706,155,778,181"/>
+<area shape="rect" href="_dictionary_8c.html#a7fb2945dac6b70e2a6216ef0984b83b0" title="Добавление элемента в словарь" alt="" coords="361,104,444,131"/>
+<area shape="rect" href="_dictionary_8c.html#a61eb8ca40b7139cfb4e674229e6e9d72" title="Удаление элемента в словаре" alt="" coords="356,256,449,283"/>
+<area shape="rect" href="_dictionary_8c.html#a4c458dc3aa1f39770a134ad39cbd07ce" title="Поиск элемента в словаре" alt="" coords="358,155,447,181"/>
+<area shape="rect" href="_binary_search_tree_8c.html#aaf66bb89347a6666796a4b73a0b591a5" title="Вставка элемента" alt="" coords="543,29,597,56"/>
+<area shape="rect" href="_keyvalue_8c.html#aaf151f3094bb9103b0054add2d0e43f4" title="Конструктор keyvalue." alt="" coords="497,155,643,181"/>
+<area shape="rect" href="_binary_search_tree_8c.html#a0f07215c1e0085d7bf68dd5b7f104032" title="Вставка элемента" alt="" coords="701,29,783,56"/>
+<area shape="rect" href="_binary_search_tree_8c.html#ad423ecd7a38d253a6230ad78c75a7747" title="Вставка элемента" alt="" coords="533,280,607,307"/>
+<area shape="rect" href="_binary_search_tree_8c.html#a081f1ef06ae37bd96bd8bbfb5ae46bf9" title="Поиск минимального элемента в поддереве" alt="" coords="691,280,793,307"/>
+<area shape="rect" href="_binary_search_tree_8c.html#a55664d31f1e7175febadee53e11b8fc5" title="Поиск элемента в дереве" alt="" coords="539,104,601,131"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="aafcdb8fdcbba97f5d8f0c677a1788ec5" name="aafcdb8fdcbba97f5d8f0c677a1788ec5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aafcdb8fdcbba97f5d8f0c677a1788ec5">&#9670;&nbsp;</a></span>START_TEST() <span class="overload">[7/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">END_TEST START_TEST </td>
+          <td>(</td>
+          <td class="paramtype">test_dict_nonexisting_value_deletion&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="check__dictionary_8c_source.html">check_dictionary.c</a> строка <a class="el" href="check__dictionary_8c_source.html#l00076">76</a></p>
+<div class="fragment"><div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>                                                 {</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <span class="keyword">struct </span><a class="code hl_struct" href="structdictionary.html">dictionary</a> test = <a class="code hl_function" href="_dictionary_8c.html#a8adc3829a86b98ffd63c9fd9fdd9155d">dictionary_constructor</a>(<a class="code hl_function" href="_compare_8c.html#a59ee43f11a4d3a568d2c3db2d6f363c4">compare_string_keys</a>, <a class="code hl_function" href="_dictionary_8c.html#a8bfe5466e9d78d6107509e31a197c16d">print_keyvalues</a>);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  <span class="keywordtype">double</span> val1 = 435.23;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  <span class="keywordtype">double</span> val2 = 213.98;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  <span class="keywordtype">char</span>* key1 = <span class="stringliteral">&quot;test&quot;</span>;</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>  <span class="keywordtype">char</span>* key2 = <span class="stringliteral">&quot;jesus&quot;</span>;</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>  test.<a class="code hl_variable" href="structdictionary.html#aa0531fe7c9f688e136e1765f4eb0d982">insert</a>(&amp;test, key1, &amp;val1, <span class="keyword">sizeof</span>(val1));</div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>  test.<a class="code hl_variable" href="structdictionary.html#aa0531fe7c9f688e136e1765f4eb0d982">insert</a>(&amp;test, key2, &amp;val2, <span class="keyword">sizeof</span>(val2));</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>  test.<a class="code hl_variable" href="structdictionary.html#a14ef5554661a41bba11083f495ba71a4">remove</a>(&amp;test, <span class="stringliteral">&quot;nigger&quot;</span>);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>  ck_assert_ptr_ne(test.<a class="code hl_variable" href="structdictionary.html#a86a703e342eb16e287c0d2bed88f317e">search</a>(&amp;test, key2), NULL);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  ck_assert_ptr_ne(test.<a class="code hl_variable" href="structdictionary.html#a86a703e342eb16e287c0d2bed88f317e">search</a>(&amp;test, key1), NULL);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>} END_TEST</div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="_compare_8c_source.html#l00043">compare_string_keys()</a>, <a class="el" href="_dictionary_8c_source.html#l00029">dictionary_constructor()</a>, <a class="el" href="_dictionary_8h_source.html#l00024">dictionary::insert</a>, <a class="el" href="_dictionary_8c_source.html#l00144">print_keyvalues()</a>, <a class="el" href="_dictionary_8h_source.html#l00028">dictionary::remove</a> и <a class="el" href="_dictionary_8h_source.html#l00026">dictionary::search</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="check__dictionary_8c_aafcdb8fdcbba97f5d8f0c677a1788ec5_cgraph.png" border="0" usemap="#acheck__dictionary_8c_aafcdb8fdcbba97f5d8f0c677a1788ec5_cgraph" alt=""/></div>
+<map name="acheck__dictionary_8c_aafcdb8fdcbba97f5d8f0c677a1788ec5_cgraph" id="acheck__dictionary_8c_aafcdb8fdcbba97f5d8f0c677a1788ec5_cgraph">
+<area shape="rect" title=" " alt="" coords="5,180,111,207"/>
+<area shape="rect" href="_compare_8c.html#a59ee43f11a4d3a568d2c3db2d6f363c4" title="Сравнение для реализованного типа keyvalue." alt="" coords="161,129,306,156"/>
+<area shape="rect" href="_dictionary_8c.html#a8adc3829a86b98ffd63c9fd9fdd9155d" title="Конструктор dictionary." alt="" coords="159,180,308,207"/>
+<area shape="rect" href="_dictionary_8c.html#a8bfe5466e9d78d6107509e31a197c16d" title="Вариант реализации функции вывода элементов словаря" alt="" coords="177,231,289,257"/>
+<area shape="rect" href="_compare_8c.html#adbb783ff4e2a922d5bea0b7a84bea4d6" title="Сравнение для int." alt="" coords="706,155,778,181"/>
+<area shape="rect" href="_dictionary_8c.html#a7fb2945dac6b70e2a6216ef0984b83b0" title="Добавление элемента в словарь" alt="" coords="361,104,444,131"/>
+<area shape="rect" href="_dictionary_8c.html#a61eb8ca40b7139cfb4e674229e6e9d72" title="Удаление элемента в словаре" alt="" coords="356,256,449,283"/>
+<area shape="rect" href="_dictionary_8c.html#a4c458dc3aa1f39770a134ad39cbd07ce" title="Поиск элемента в словаре" alt="" coords="358,155,447,181"/>
+<area shape="rect" href="_binary_search_tree_8c.html#aaf66bb89347a6666796a4b73a0b591a5" title="Вставка элемента" alt="" coords="543,29,597,56"/>
+<area shape="rect" href="_keyvalue_8c.html#aaf151f3094bb9103b0054add2d0e43f4" title="Конструктор keyvalue." alt="" coords="497,155,643,181"/>
+<area shape="rect" href="_binary_search_tree_8c.html#a0f07215c1e0085d7bf68dd5b7f104032" title="Вставка элемента" alt="" coords="701,29,783,56"/>
+<area shape="rect" href="_binary_search_tree_8c.html#ad423ecd7a38d253a6230ad78c75a7747" title="Вставка элемента" alt="" coords="533,280,607,307"/>
+<area shape="rect" href="_binary_search_tree_8c.html#a081f1ef06ae37bd96bd8bbfb5ae46bf9" title="Поиск минимального элемента в поддереве" alt="" coords="691,280,793,307"/>
+<area shape="rect" href="_binary_search_tree_8c.html#a55664d31f1e7175febadee53e11b8fc5" title="Поиск элемента в дереве" alt="" coords="539,104,601,131"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab46760239346c3240a8f84eedf96731b" name="ab46760239346c3240a8f84eedf96731b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab46760239346c3240a8f84eedf96731b">&#9670;&nbsp;</a></span>START_TEST() <span class="overload">[8/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">END_TEST START_TEST </td>
+          <td>(</td>
+          <td class="paramtype">test_dict_nonexisting_value_insertion&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="check__dictionary_8c_source.html">check_dictionary.c</a> строка <a class="el" href="check__dictionary_8c_source.html#l00029">29</a></p>
+<div class="fragment"><div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>                                                  {</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <span class="keyword">struct </span><a class="code hl_struct" href="structdictionary.html">dictionary</a> test = <a class="code hl_function" href="_dictionary_8c.html#a8adc3829a86b98ffd63c9fd9fdd9155d">dictionary_constructor</a>(<a class="code hl_function" href="_compare_8c.html#a59ee43f11a4d3a568d2c3db2d6f363c4">compare_string_keys</a>, <a class="code hl_function" href="_dictionary_8c.html#a8bfe5466e9d78d6107509e31a197c16d">print_keyvalues</a>);</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  <span class="keywordtype">double</span> val1 = 435.23;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  <span class="keywordtype">char</span>* key1 = <span class="stringliteral">&quot;test&quot;</span>;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  test.<a class="code hl_variable" href="structdictionary.html#aa0531fe7c9f688e136e1765f4eb0d982">insert</a>(&amp;test, key1, &amp;val1, <span class="keyword">sizeof</span>(val1));</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  ck_assert_double_eq(*(<span class="keywordtype">double</span> *)(((<span class="keyword">struct</span> <a class="code hl_struct" href="structkeyvalue.html">keyvalue</a> *)test.<a class="code hl_variable" href="structdictionary.html#ac6c89915706cac6d89dbed1ed07d46d6">root</a>-&gt;<a class="code hl_variable" href="structnode.html#ae82853bbf3b0d2b71de205ae40799555">data</a>)-&gt;value), val1);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>} END_TEST</div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="_compare_8c_source.html#l00043">compare_string_keys()</a>, <a class="el" href="_binary_search_tree_8h_source.html#l00018">node::data</a>, <a class="el" href="_dictionary_8c_source.html#l00029">dictionary_constructor()</a>, <a class="el" href="_dictionary_8h_source.html#l00024">dictionary::insert</a>, <a class="el" href="_dictionary_8c_source.html#l00144">print_keyvalues()</a> и <a class="el" href="_dictionary_8h_source.html#l00020">dictionary::root</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="check__dictionary_8c_ab46760239346c3240a8f84eedf96731b_cgraph.png" border="0" usemap="#acheck__dictionary_8c_ab46760239346c3240a8f84eedf96731b_cgraph" alt=""/></div>
+<map name="acheck__dictionary_8c_ab46760239346c3240a8f84eedf96731b_cgraph" id="acheck__dictionary_8c_ab46760239346c3240a8f84eedf96731b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,180,111,207"/>
+<area shape="rect" href="_compare_8c.html#a59ee43f11a4d3a568d2c3db2d6f363c4" title="Сравнение для реализованного типа keyvalue." alt="" coords="161,129,306,156"/>
+<area shape="rect" href="_dictionary_8c.html#a8adc3829a86b98ffd63c9fd9fdd9155d" title="Конструктор dictionary." alt="" coords="159,180,308,207"/>
+<area shape="rect" href="_dictionary_8c.html#a8bfe5466e9d78d6107509e31a197c16d" title="Вариант реализации функции вывода элементов словаря" alt="" coords="177,231,289,257"/>
+<area shape="rect" href="_compare_8c.html#adbb783ff4e2a922d5bea0b7a84bea4d6" title="Сравнение для int." alt="" coords="706,155,778,181"/>
+<area shape="rect" href="_dictionary_8c.html#a7fb2945dac6b70e2a6216ef0984b83b0" title="Добавление элемента в словарь" alt="" coords="361,104,444,131"/>
+<area shape="rect" href="_dictionary_8c.html#a61eb8ca40b7139cfb4e674229e6e9d72" title="Удаление элемента в словаре" alt="" coords="356,256,449,283"/>
+<area shape="rect" href="_dictionary_8c.html#a4c458dc3aa1f39770a134ad39cbd07ce" title="Поиск элемента в словаре" alt="" coords="358,155,447,181"/>
+<area shape="rect" href="_binary_search_tree_8c.html#aaf66bb89347a6666796a4b73a0b591a5" title="Вставка элемента" alt="" coords="543,29,597,56"/>
+<area shape="rect" href="_keyvalue_8c.html#aaf151f3094bb9103b0054add2d0e43f4" title="Конструктор keyvalue." alt="" coords="497,155,643,181"/>
+<area shape="rect" href="_binary_search_tree_8c.html#a0f07215c1e0085d7bf68dd5b7f104032" title="Вставка элемента" alt="" coords="701,29,783,56"/>
+<area shape="rect" href="_binary_search_tree_8c.html#ad423ecd7a38d253a6230ad78c75a7747" title="Вставка элемента" alt="" coords="533,280,607,307"/>
+<area shape="rect" href="_binary_search_tree_8c.html#a081f1ef06ae37bd96bd8bbfb5ae46bf9" title="Поиск минимального элемента в поддереве" alt="" coords="691,280,793,307"/>
+<area shape="rect" href="_binary_search_tree_8c.html#a55664d31f1e7175febadee53e11b8fc5" title="Поиск элемента в дереве" alt="" coords="539,104,601,131"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a04ab1a8b404f95ec1f8e8dc7a5203b4b" name="a04ab1a8b404f95ec1f8e8dc7a5203b4b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a04ab1a8b404f95ec1f8e8dc7a5203b4b">&#9670;&nbsp;</a></span>START_TEST() <span class="overload">[9/9]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">END_TEST START_TEST </td>
+          <td>(</td>
+          <td class="paramtype">test_dict_nonexisting_value_search&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="check__dictionary_8c_source.html">check_dictionary.c</a> строка <a class="el" href="check__dictionary_8c_source.html#l00056">56</a></p>
+<div class="fragment"><div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>                                               {</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="keyword">struct </span><a class="code hl_struct" href="structdictionary.html">dictionary</a> test = <a class="code hl_function" href="_dictionary_8c.html#a8adc3829a86b98ffd63c9fd9fdd9155d">dictionary_constructor</a>(<a class="code hl_function" href="_compare_8c.html#a59ee43f11a4d3a568d2c3db2d6f363c4">compare_string_keys</a>, <a class="code hl_function" href="_dictionary_8c.html#a8bfe5466e9d78d6107509e31a197c16d">print_keyvalues</a>);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <span class="keywordtype">double</span> val1 = 435.23;</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <span class="keywordtype">char</span>* key1 = <span class="stringliteral">&quot;test&quot;</span>;</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  test.<a class="code hl_variable" href="structdictionary.html#aa0531fe7c9f688e136e1765f4eb0d982">insert</a>(&amp;test, key1, &amp;val1, <span class="keyword">sizeof</span>(val1));</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  ck_assert_ptr_eq(test.<a class="code hl_variable" href="structdictionary.html#a86a703e342eb16e287c0d2bed88f317e">search</a>(&amp;test, <span class="stringliteral">&quot;gay&quot;</span>), NULL);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>} END_TEST</div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="_compare_8c_source.html#l00043">compare_string_keys()</a>, <a class="el" href="_dictionary_8c_source.html#l00029">dictionary_constructor()</a>, <a class="el" href="_dictionary_8h_source.html#l00024">dictionary::insert</a>, <a class="el" href="_dictionary_8c_source.html#l00144">print_keyvalues()</a> и <a class="el" href="_dictionary_8h_source.html#l00026">dictionary::search</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="check__dictionary_8c_a04ab1a8b404f95ec1f8e8dc7a5203b4b_cgraph.png" border="0" usemap="#acheck__dictionary_8c_a04ab1a8b404f95ec1f8e8dc7a5203b4b_cgraph" alt=""/></div>
+<map name="acheck__dictionary_8c_a04ab1a8b404f95ec1f8e8dc7a5203b4b_cgraph" id="acheck__dictionary_8c_a04ab1a8b404f95ec1f8e8dc7a5203b4b_cgraph">
+<area shape="rect" title=" " alt="" coords="5,180,111,207"/>
+<area shape="rect" href="_compare_8c.html#a59ee43f11a4d3a568d2c3db2d6f363c4" title="Сравнение для реализованного типа keyvalue." alt="" coords="161,129,306,156"/>
+<area shape="rect" href="_dictionary_8c.html#a8adc3829a86b98ffd63c9fd9fdd9155d" title="Конструктор dictionary." alt="" coords="159,180,308,207"/>
+<area shape="rect" href="_dictionary_8c.html#a8bfe5466e9d78d6107509e31a197c16d" title="Вариант реализации функции вывода элементов словаря" alt="" coords="177,231,289,257"/>
+<area shape="rect" href="_compare_8c.html#adbb783ff4e2a922d5bea0b7a84bea4d6" title="Сравнение для int." alt="" coords="706,155,778,181"/>
+<area shape="rect" href="_dictionary_8c.html#a7fb2945dac6b70e2a6216ef0984b83b0" title="Добавление элемента в словарь" alt="" coords="361,104,444,131"/>
+<area shape="rect" href="_dictionary_8c.html#a61eb8ca40b7139cfb4e674229e6e9d72" title="Удаление элемента в словаре" alt="" coords="356,256,449,283"/>
+<area shape="rect" href="_dictionary_8c.html#a4c458dc3aa1f39770a134ad39cbd07ce" title="Поиск элемента в словаре" alt="" coords="358,155,447,181"/>
+<area shape="rect" href="_binary_search_tree_8c.html#aaf66bb89347a6666796a4b73a0b591a5" title="Вставка элемента" alt="" coords="543,29,597,56"/>
+<area shape="rect" href="_keyvalue_8c.html#aaf151f3094bb9103b0054add2d0e43f4" title="Конструктор keyvalue." alt="" coords="497,155,643,181"/>
+<area shape="rect" href="_binary_search_tree_8c.html#a0f07215c1e0085d7bf68dd5b7f104032" title="Вставка элемента" alt="" coords="701,29,783,56"/>
+<area shape="rect" href="_binary_search_tree_8c.html#ad423ecd7a38d253a6230ad78c75a7747" title="Вставка элемента" alt="" coords="533,280,607,307"/>
+<area shape="rect" href="_binary_search_tree_8c.html#a081f1ef06ae37bd96bd8bbfb5ae46bf9" title="Поиск минимального элемента в поддереве" alt="" coords="691,280,793,307"/>
+<area shape="rect" href="_binary_search_tree_8c.html#a55664d31f1e7175febadee53e11b8fc5" title="Поиск элемента в дереве" alt="" coords="539,104,601,131"/>
+</map>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по Лабораторная работа №4 по предмету программирование МФ МГТУ им. Н.Э. Баумана. Последние изменения: Чт 16 Фев 2023 13:00:39. Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+</small></address>
+</body>
+</html>

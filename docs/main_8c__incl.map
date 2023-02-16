@@ -1,0 +1,10 @@
+<map id="src/main.c" name="src/main.c">
+<area shape="rect" id="node1" title="Заголовочный файл с описанием классов. Тестовая версия #2." alt="" coords="431,5,514,32"/>
+<area shape="rect" id="node2" href="$_dictionary_8h.html" title="Header&#45;файл реализации структуры Словаря на базе Дерева Бинарного Поиска" alt="" coords="35,80,151,107"/>
+<area shape="rect" id="node4" href="$_compare_8h.html" title="Header&#45;файл функций compare." alt="" coords="175,80,315,107"/>
+<area shape="rect" id="node5" href="$_keyvalue_8h.html" title="Header&#45;файл реализации структуры keyvalue." alt="" coords="339,80,481,107"/>
+<area shape="rect" id="node6" title=" " alt="" coords="505,80,565,107"/>
+<area shape="rect" id="node7" title=" " alt="" coords="589,80,652,107"/>
+<area shape="rect" id="node8" title=" " alt="" coords="677,80,741,107"/>
+<area shape="rect" id="node3" href="$_binary_search_tree_8h.html" title="Header&#45;файл реализации структуры Дерева Бинарного Поиска" alt="" coords="5,155,180,181"/>
+</map>

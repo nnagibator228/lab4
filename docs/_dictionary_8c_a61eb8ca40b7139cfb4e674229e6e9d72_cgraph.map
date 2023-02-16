@@ -1,0 +1,7 @@
+<map id="remove_dict" name="remove_dict">
+<area shape="rect" id="node1" title="Удаление элемента в словаре" alt="" coords="5,43,99,69"/>
+<area shape="rect" id="node2" href="$_keyvalue_8c.html#aaf151f3094bb9103b0054add2d0e43f4" title="Конструктор keyvalue." alt="" coords="147,5,292,32"/>
+<area shape="rect" id="node3" href="$_binary_search_tree_8c.html#ad423ecd7a38d253a6230ad78c75a7747" title="Вставка элемента" alt="" coords="182,80,257,107"/>
+<area shape="rect" id="node4" href="$_compare_8c.html#adbb783ff4e2a922d5bea0b7a84bea4d6" title="Сравнение для int." alt="" coords="355,43,427,69"/>
+<area shape="rect" id="node5" href="$_binary_search_tree_8c.html#a081f1ef06ae37bd96bd8bbfb5ae46bf9" title="Поиск минимального элемента в поддереве" alt="" coords="340,117,443,144"/>
+</map>

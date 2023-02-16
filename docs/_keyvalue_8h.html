@@ -1,0 +1,250 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Лабораторная работа №4 по предмету программирование МФ МГТУ им. Н.Э. Баумана: Файл src/Common/Keyvalue.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Лабораторная работа №4 по предмету программирование МФ МГТУ им. Н.Э. Баумана
+   </div>
+   <div id="projectbrief">Реализация абстрактной структуры данных словарь</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_ba210d1fa67db7bee1bb22e0a3c11d9f.html">Common</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#nested-classes">Структуры данных</a> &#124;
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle"><div class="title">Файл Keyvalue.h</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Header-файл реализации структуры keyvalue.  
+<a href="#details">Подробнее...</a></p>
+<div class="textblock"><div class="dynheader">
+Граф файлов, в которые включается этот файл:</div>
+<div class="dyncontent">
+<div class="center"><img src="_keyvalue_8h__dep__incl.png" border="0" usemap="#asrc_2_common_2_keyvalue_8hdep" alt=""/></div>
+<map name="asrc_2_common_2_keyvalue_8hdep" id="asrc_2_common_2_keyvalue_8hdep">
+<area shape="rect" title="Header&#45;файл реализации структуры keyvalue." alt="" coords="501,5,664,32"/>
+<area shape="rect" href="_compare_8c.html" title="Основной файл функций compare." alt="" coords="5,80,168,107"/>
+<area shape="rect" href="_keyvalue_8c.html" title="Основной файл функций keyvalue." alt="" coords="192,80,355,107"/>
+<area shape="rect" href="_dictionary_8c.html" title="Основной файл функций compare." alt="" coords="379,80,517,107"/>
+<area shape="rect" href="main_8c.html" title="Заголовочный файл с описанием классов. Тестовая версия #2." alt="" coords="541,80,624,107"/>
+<area shape="rect" href="check__compare_8c.html" title=" " alt="" coords="648,80,827,107"/>
+<area shape="rect" href="check__dictionary_8c.html" title=" " alt="" coords="851,80,1035,107"/>
+<area shape="rect" href="check__keyvalue_8c.html" title=" " alt="" coords="1059,80,1239,107"/>
+</map>
+</div>
+</div>
+<p><a href="_keyvalue_8h_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
+Структуры данных</h2></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">struct &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structkeyvalue.html">keyvalue</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Структура, хранящая ключ строку и свободный указатель на значение  <a href="structkeyvalue.html#details">Подробнее...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:aaf151f3094bb9103b0054add2d0e43f4"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structkeyvalue.html">keyvalue</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_keyvalue_8h.html#aaf151f3094bb9103b0054add2d0e43f4">keyvalue_constructor</a> (char *key, void *value, unsigned long size)</td></tr>
+<tr class="memdesc:aaf151f3094bb9103b0054add2d0e43f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Конструктор keyvalue.  <a href="_keyvalue_8h.html#aaf151f3094bb9103b0054add2d0e43f4">Подробнее...</a><br /></td></tr>
+<tr class="separator:aaf151f3094bb9103b0054add2d0e43f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a45054f967062d637b292a8411bbd07e0"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structkeyvalue.html">keyvalue</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_keyvalue_8h.html#a45054f967062d637b292a8411bbd07e0">keyvalue_destructor</a> (struct <a class="el" href="structkeyvalue.html">keyvalue</a> *keyval)</td></tr>
+<tr class="memdesc:a45054f967062d637b292a8411bbd07e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Деструктор keyvalue.  <a href="_keyvalue_8h.html#a45054f967062d637b292a8411bbd07e0">Подробнее...</a><br /></td></tr>
+<tr class="separator:a45054f967062d637b292a8411bbd07e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p >Header-файл реализации структуры keyvalue. </p>
+<p >Содерижит объявления структуры keyvalue и функций, предназначенных для взаимодействия с этой структурой </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_keyvalue_8h_source.html">Keyvalue.h</a></p>
+</div><h2 class="groupheader">Функции</h2>
+<a id="aaf151f3094bb9103b0054add2d0e43f4" name="aaf151f3094bb9103b0054add2d0e43f4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aaf151f3094bb9103b0054add2d0e43f4">&#9670;&nbsp;</a></span>keyvalue_constructor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structkeyvalue.html">keyvalue</a> * keyvalue_constructor </td>
+          <td>(</td>
+          <td class="paramtype">char *&#160;</td>
+          <td class="paramname"><em>key</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">void *&#160;</td>
+          <td class="paramname"><em>value</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">unsigned long&#160;</td>
+          <td class="paramname"><em>size</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Конструктор keyvalue. </p>
+<p >Конструктор для структуры keyvalue, динамически выделяющий память на соответственные поля</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>ключ-строка </td></tr>
+    <tr><td class="paramname">value</td><td>указатель на значение </td></tr>
+    <tr><td class="paramname">size</td><td>размер значения </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Возвращает</dt><dd>keyval указатель на созданный экземпляр </dd></dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_keyvalue_8c_source.html">Keyvalue.c</a> строка <a class="el" href="_keyvalue_8c_source.html#l00023">23</a></p>
+<div class="fragment"><div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>                                                                                 {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <span class="keyword">struct </span><a class="code hl_struct" href="structkeyvalue.html">keyvalue</a> *keyval;</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  keyval = malloc(<span class="keyword">sizeof</span>(<span class="keyword">struct</span> <a class="code hl_struct" href="structkeyvalue.html">keyvalue</a>));</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  keyval-&gt;<a class="code hl_variable" href="structkeyvalue.html#a73ca0d9686fe6c912a32ce6afd178e10">key</a> = malloc(<span class="keyword">sizeof</span>(<a class="code hl_variable" href="structkeyvalue.html#a73ca0d9686fe6c912a32ce6afd178e10">key</a>));</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  memcpy(keyval-&gt;<a class="code hl_variable" href="structkeyvalue.html#a73ca0d9686fe6c912a32ce6afd178e10">key</a>, <a class="code hl_variable" href="structkeyvalue.html#a73ca0d9686fe6c912a32ce6afd178e10">key</a>, <span class="keyword">sizeof</span>(<span class="keywordtype">char</span>*));</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  keyval-&gt;<a class="code hl_variable" href="structkeyvalue.html#a963e7b2cc60458177f86a60df21ea421">value</a> = malloc(size);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  memcpy(keyval-&gt;<a class="code hl_variable" href="structkeyvalue.html#a963e7b2cc60458177f86a60df21ea421">value</a>, <a class="code hl_variable" href="structkeyvalue.html#a963e7b2cc60458177f86a60df21ea421">value</a>, size);</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <span class="keywordflow">return</span> keyval;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>}</div>
+<div class="ttc" id="astructkeyvalue_html"><div class="ttname"><a href="structkeyvalue.html">keyvalue</a></div><div class="ttdoc">Структура, хранящая ключ строку и свободный указатель на значение</div><div class="ttdef"><b>Definition:</b> <a href="_keyvalue_8h_source.html#l00016">Keyvalue.h:16</a></div></div>
+<div class="ttc" id="astructkeyvalue_html_a73ca0d9686fe6c912a32ce6afd178e10"><div class="ttname"><a href="structkeyvalue.html#a73ca0d9686fe6c912a32ce6afd178e10">keyvalue::key</a></div><div class="ttdeci">char * key</div><div class="ttdef"><b>Definition:</b> <a href="_keyvalue_8h_source.html#l00018">Keyvalue.h:18</a></div></div>
+<div class="ttc" id="astructkeyvalue_html_a963e7b2cc60458177f86a60df21ea421"><div class="ttname"><a href="structkeyvalue.html#a963e7b2cc60458177f86a60df21ea421">keyvalue::value</a></div><div class="ttdeci">void * value</div><div class="ttdef"><b>Definition:</b> <a href="_keyvalue_8h_source.html#l00020">Keyvalue.h:20</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="_keyvalue_8h_source.html#l00018">keyvalue::key</a> и <a class="el" href="_keyvalue_8h_source.html#l00020">keyvalue::value</a>.</p>
+
+<p class="reference">Используется в <a class="el" href="_dictionary_8c_source.html#l00085">insert_dict()</a>, <a class="el" href="_dictionary_8c_source.html#l00120">remove_dict()</a>, <a class="el" href="_dictionary_8c_source.html#l00099">search_dict()</a> и <a class="el" href="check__compare_8c_source.html#l00044">START_TEST()</a>.</p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="_keyvalue_8h_aaf151f3094bb9103b0054add2d0e43f4_icgraph.png" border="0" usemap="#a_keyvalue_8h_aaf151f3094bb9103b0054add2d0e43f4_icgraph" alt=""/></div>
+<map name="a_keyvalue_8h_aaf151f3094bb9103b0054add2d0e43f4_icgraph" id="a_keyvalue_8h_aaf151f3094bb9103b0054add2d0e43f4_icgraph">
+<area shape="rect" title="Конструктор keyvalue." alt="" coords="509,81,655,108"/>
+<area shape="rect" href="_dictionary_8c.html#a7fb2945dac6b70e2a6216ef0984b83b0" title="Добавление элемента в словарь" alt="" coords="367,5,450,32"/>
+<area shape="rect" href="_dictionary_8c.html#a61eb8ca40b7139cfb4e674229e6e9d72" title="Удаление элемента в словаре" alt="" coords="362,56,455,83"/>
+<area shape="rect" href="_dictionary_8c.html#a4c458dc3aa1f39770a134ad39cbd07ce" title="Поиск элемента в словаре" alt="" coords="364,107,453,133"/>
+<area shape="rect" href="check__compare_8c.html#a214612bcfc10a248ec5a55f506f17d8c" title=" " alt="" coords="356,157,461,184"/>
+<area shape="rect" href="_dictionary_8c.html#a8adc3829a86b98ffd63c9fd9fdd9155d" title="Конструктор dictionary." alt="" coords="159,56,308,83"/>
+<area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="33,31,83,57"/>
+<area shape="rect" href="check__dictionary_8c.html#ae07cf879461781b6ae48bf6a0d785033" title=" " alt="" coords="5,81,111,108"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a45054f967062d637b292a8411bbd07e0" name="a45054f967062d637b292a8411bbd07e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a45054f967062d637b292a8411bbd07e0">&#9670;&nbsp;</a></span>keyvalue_destructor()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structkeyvalue.html">keyvalue</a> keyvalue_destructor </td>
+          <td>(</td>
+          <td class="paramtype">struct <a class="el" href="structkeyvalue.html">keyvalue</a> *&#160;</td>
+          <td class="paramname"><em>keyval</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Деструктор keyvalue. </p>
+<p >Деструктор для структуры keyvalue, очищает соответствующие поля</p>
+<dl class="params"><dt>Аргументы</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">keyval</td><td>указатель на удаляемый экземпляр </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">См. определение в файле <a class="el" href="_keyvalue_8c_source.html">Keyvalue.c</a> строка <a class="el" href="_keyvalue_8c_source.html#l00040">40</a></p>
+<div class="fragment"><div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>                                                            {</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>  free(keyval-&gt;<a class="code hl_variable" href="structkeyvalue.html#a73ca0d9686fe6c912a32ce6afd178e10">key</a>);</div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span>  free(keyval-&gt;<a class="code hl_variable" href="structkeyvalue.html#a963e7b2cc60458177f86a60df21ea421">value</a>);</div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>}</div>
+</div><!-- fragment -->
+<p class="reference">Используется в <a class="el" href="_dictionary_8c_source.html#l00059">recursive_dictionary_destroy()</a>.</p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="_keyvalue_8h_a45054f967062d637b292a8411bbd07e0_icgraph.png" border="0" usemap="#a_keyvalue_8h_a45054f967062d637b292a8411bbd07e0_icgraph" alt=""/></div>
+<map name="a_keyvalue_8h_a45054f967062d637b292a8411bbd07e0_icgraph" id="a_keyvalue_8h_a45054f967062d637b292a8411bbd07e0_icgraph">
+<area shape="rect" title="Деструктор keyvalue." alt="" coords="535,37,673,63"/>
+<area shape="rect" href="_dictionary_8c.html#a1e17f8287d87276f750271464925a206" title="рекурсивное удаление элементов ДБП" alt="" coords="349,29,487,71"/>
+<area shape="rect" href="_dictionary_8c.html#accd261aab84d834443671641317436c1" title="Деструктор dictionary." alt="" coords="159,37,301,63"/>
+<area shape="rect" href="main_8c.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="33,11,83,38"/>
+<area shape="rect" href="check__dictionary_8c.html#a63fff77429b1b5195eed4c645b238398" title=" " alt="" coords="5,62,111,89"/>
+</map>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по Лабораторная работа №4 по предмету программирование МФ МГТУ им. Н.Э. Баумана. Последние изменения: Чт 16 Фев 2023 13:00:39. Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+</small></address>
+</body>
+</html>

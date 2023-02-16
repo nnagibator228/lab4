@@ -1,0 +1,607 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Лабораторная работа №4 по предмету программирование МФ МГТУ им. Н.Э. Баумана: Файл src/tests/check_compare.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Лабораторная работа №4 по предмету программирование МФ МГТУ им. Н.Э. Баумана
+   </div>
+   <div id="projectbrief">Реализация абстрактной структуры данных словарь</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_d93a1d4020dea85bb71b237545b5e722.html">tests</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle"><div class="title">Файл check_compare.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;check.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="_keyvalue_8h_source.html">../Common/Keyvalue.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_compare_8h_source.html">../Common/Compare.h</a>&quot;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для check_compare.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="check__compare_8c__incl.png" border="0" usemap="#asrc_2tests_2check__compare_8c" alt=""/></div>
+<map name="asrc_2tests_2check__compare_8c" id="asrc_2tests_2check__compare_8c">
+<area shape="rect" title=" " alt="" coords="257,5,436,32"/>
+<area shape="rect" title=" " alt="" coords="5,80,72,107"/>
+<area shape="rect" href="_keyvalue_8h.html" title="Header&#45;файл реализации структуры keyvalue." alt="" coords="97,80,247,107"/>
+<area shape="rect" href="_compare_8h.html" title="Header&#45;файл функций compare." alt="" coords="271,80,422,107"/>
+<area shape="rect" title=" " alt="" coords="446,80,509,107"/>
+<area shape="rect" title=" " alt="" coords="533,80,593,107"/>
+</map>
+</div>
+</div>
+<p><a href="check__compare_8c_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:a43a70d18a6405a7ceb97eb56efcdba88"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="check__compare_8c.html#a43a70d18a6405a7ceb97eb56efcdba88">START_TEST</a> (test_with_equal_vals_compare)</td></tr>
+<tr class="separator:a43a70d18a6405a7ceb97eb56efcdba88"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf78da7bb41c9f8c4674419f4dfc753a"><td class="memItemLeft" align="right" valign="top">END_TEST&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="check__compare_8c.html#adf78da7bb41c9f8c4674419f4dfc753a">START_TEST</a> (test_with_smaller_val_first_compare)</td></tr>
+<tr class="separator:adf78da7bb41c9f8c4674419f4dfc753a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1c2b54ca34e7e8d3d3df157970671e3d"><td class="memItemLeft" align="right" valign="top">END_TEST&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="check__compare_8c.html#a1c2b54ca34e7e8d3d3df157970671e3d">START_TEST</a> (test_with_larger_val_first_compare)</td></tr>
+<tr class="separator:a1c2b54ca34e7e8d3d3df157970671e3d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad4255a817fb98e5d949053f112f9592c"><td class="memItemLeft" align="right" valign="top">END_TEST&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="check__compare_8c.html#ad4255a817fb98e5d949053f112f9592c">START_TEST</a> (test_with_negative_val_compare)</td></tr>
+<tr class="separator:ad4255a817fb98e5d949053f112f9592c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38e78840b429f2cda6e9e65a64bd2db9"><td class="memItemLeft" align="right" valign="top">END_TEST&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="check__compare_8c.html#a38e78840b429f2cda6e9e65a64bd2db9">START_TEST</a> (test_with_negative_vals_compare)</td></tr>
+<tr class="separator:a38e78840b429f2cda6e9e65a64bd2db9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a02f937553ac48e9ad067b5237d0c9ba4"><td class="memItemLeft" align="right" valign="top">END_TEST&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="check__compare_8c.html#a02f937553ac48e9ad067b5237d0c9ba4">START_TEST</a> (test_with_nill_val_compare)</td></tr>
+<tr class="separator:a02f937553ac48e9ad067b5237d0c9ba4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a214612bcfc10a248ec5a55f506f17d8c"><td class="memItemLeft" align="right" valign="top">END_TEST&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="check__compare_8c.html#a214612bcfc10a248ec5a55f506f17d8c">START_TEST</a> (test_with_equal_strings_keyval_by_str_compare)</td></tr>
+<tr class="separator:a214612bcfc10a248ec5a55f506f17d8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad60e66d02b95cf814fb5f2ae18929813"><td class="memItemLeft" align="right" valign="top">END_TEST&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="check__compare_8c.html#ad60e66d02b95cf814fb5f2ae18929813">START_TEST</a> (test_with_greater_string_first_keyval_by_str_compare)</td></tr>
+<tr class="separator:ad60e66d02b95cf814fb5f2ae18929813"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acef2e60fdcfadf0aa165c02733271476"><td class="memItemLeft" align="right" valign="top">END_TEST&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="check__compare_8c.html#acef2e60fdcfadf0aa165c02733271476">START_TEST</a> (test_with_smaller_string_first_keyval_by_str_compare)</td></tr>
+<tr class="separator:acef2e60fdcfadf0aa165c02733271476"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a706078cd228c09ae6fe75ff08a104671"><td class="memItemLeft" align="right" valign="top">END_TEST&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="check__compare_8c.html#a706078cd228c09ae6fe75ff08a104671">START_TEST</a> (test_with_empty_string_first_keyval_by_str_compare)</td></tr>
+<tr class="separator:a706078cd228c09ae6fe75ff08a104671"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa675caec1022b649bd5ce0531fb9adec"><td class="memItemLeft" align="right" valign="top">END_TEST Suite *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="check__compare_8c.html#aa675caec1022b649bd5ce0531fb9adec">compare_suite</a> (void)</td></tr>
+<tr class="separator:aa675caec1022b649bd5ce0531fb9adec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a840291bc02cba5474a4cb46a9b9566fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="check__compare_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main</a> (void)</td></tr>
+<tr class="separator:a840291bc02cba5474a4cb46a9b9566fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Функции</h2>
+<a id="aa675caec1022b649bd5ce0531fb9adec" name="aa675caec1022b649bd5ce0531fb9adec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa675caec1022b649bd5ce0531fb9adec">&#9670;&nbsp;</a></span>compare_suite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">END_TEST Suite * compare_suite </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="check__compare_8c_source.html">check_compare.c</a> строка <a class="el" href="check__compare_8c_source.html#l00085">85</a></p>
+<div class="fragment"><div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>                           {</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>  Suite *s;</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>  TCase *tc_core;</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  s = suite_create(<span class="stringliteral">&quot;CompareTest&quot;</span>);</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  tc_core = tcase_create(<span class="stringliteral">&quot;Core&quot;</span>);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>  tcase_add_test(tc_core, test_with_equal_vals_compare);</div>
+<div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  tcase_add_test(tc_core, test_with_smaller_val_first_compare);</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>  tcase_add_test(tc_core, test_with_larger_val_first_compare);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>  tcase_add_test(tc_core, test_with_negative_val_compare);</div>
+<div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span>  tcase_add_test(tc_core, test_with_negative_vals_compare);</div>
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>  tcase_add_test(tc_core, test_with_nill_val_compare);</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>  tcase_add_test(tc_core, test_with_equal_strings_keyval_by_str_compare);</div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>  tcase_add_test(tc_core, test_with_greater_string_first_keyval_by_str_compare);</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>  tcase_add_test(tc_core, test_with_smaller_string_first_keyval_by_str_compare);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>  tcase_add_test(tc_core, test_with_empty_string_first_keyval_by_str_compare);</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span> </div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>  suite_add_tcase(s, tc_core);</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>  <span class="keywordflow">return</span> s;</div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>}</div>
+</div><!-- fragment -->
+<p class="reference">Используется в <a class="el" href="check__compare_8c_source.html#l00108">main()</a>.</p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="check__compare_8c_aa675caec1022b649bd5ce0531fb9adec_icgraph.png" border="0" usemap="#acheck__compare_8c_aa675caec1022b649bd5ce0531fb9adec_icgraph" alt=""/></div>
+<map name="acheck__compare_8c_aa675caec1022b649bd5ce0531fb9adec_icgraph" id="acheck__compare_8c_aa675caec1022b649bd5ce0531fb9adec_icgraph">
+<area shape="rect" title=" " alt="" coords="104,5,211,32"/>
+<area shape="rect" href="check__compare_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,5,56,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a840291bc02cba5474a4cb46a9b9566fe" name="a840291bc02cba5474a4cb46a9b9566fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a840291bc02cba5474a4cb46a9b9566fe">&#9670;&nbsp;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="check__compare_8c_source.html">check_compare.c</a> строка <a class="el" href="check__compare_8c_source.html#l00108">108</a></p>
+<div class="fragment"><div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>               {</div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>  Suite *s = <a class="code hl_function" href="check__compare_8c.html#aa675caec1022b649bd5ce0531fb9adec">compare_suite</a>();</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>  SRunner *runner = srunner_create(s);</div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span> </div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>  srunner_run_all(runner, CK_NORMAL);</div>
+<div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span>  <span class="keywordtype">int</span> no_failed = srunner_ntests_failed(runner);</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>  srunner_free(runner);</div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>  <span class="keywordflow">return</span> (no_failed == 0) ? EXIT_SUCCESS : EXIT_FAILURE;</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>}</div>
+<div class="ttc" id="acheck__compare_8c_html_aa675caec1022b649bd5ce0531fb9adec"><div class="ttname"><a href="check__compare_8c.html#aa675caec1022b649bd5ce0531fb9adec">compare_suite</a></div><div class="ttdeci">END_TEST Suite * compare_suite(void)</div><div class="ttdef"><b>Definition:</b> <a href="check__compare_8c_source.html#l00085">check_compare.c:85</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="check__compare_8c_source.html#l00085">compare_suite()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="check__compare_8c_a840291bc02cba5474a4cb46a9b9566fe_cgraph.png" border="0" usemap="#acheck__compare_8c_a840291bc02cba5474a4cb46a9b9566fe_cgraph" alt=""/></div>
+<map name="acheck__compare_8c_a840291bc02cba5474a4cb46a9b9566fe_cgraph" id="acheck__compare_8c_a840291bc02cba5474a4cb46a9b9566fe_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,56,32"/>
+<area shape="rect" href="check__compare_8c.html#aa675caec1022b649bd5ce0531fb9adec" title=" " alt="" coords="104,5,211,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a706078cd228c09ae6fe75ff08a104671" name="a706078cd228c09ae6fe75ff08a104671"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a706078cd228c09ae6fe75ff08a104671">&#9670;&nbsp;</a></span>START_TEST() <span class="overload">[1/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">END_TEST START_TEST </td>
+          <td>(</td>
+          <td class="paramtype">test_with_empty_string_first_keyval_by_str_compare&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="check__compare_8c_source.html">check_compare.c</a> строка <a class="el" href="check__compare_8c_source.html#l00073">73</a></p>
+<div class="fragment"><div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>                                                               {</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  <span class="keywordtype">double</span> val1 = 12.213;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  <span class="keywordtype">char</span>* key1 = <span class="stringliteral">&quot;kkk&quot;</span>;</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  <span class="keywordtype">double</span> val2 = 36.546;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <span class="keywordtype">char</span>* key2 = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>  <span class="keyword">struct </span><a class="code hl_struct" href="structkeyvalue.html">keyvalue</a> *kv1 = <a class="code hl_function" href="_keyvalue_8c.html#aaf151f3094bb9103b0054add2d0e43f4">keyvalue_constructor</a>(key1, &amp;val1, <span class="keyword">sizeof</span>(val1));</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>  <span class="keyword">struct </span><a class="code hl_struct" href="structkeyvalue.html">keyvalue</a> *kv2 = <a class="code hl_function" href="_keyvalue_8c.html#aaf151f3094bb9103b0054add2d0e43f4">keyvalue_constructor</a>(key2, &amp;val2, <span class="keyword">sizeof</span>(val2));</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>  ck_assert_uint_eq(<a class="code hl_function" href="_compare_8c.html#a59ee43f11a4d3a568d2c3db2d6f363c4">compare_string_keys</a>(kv1, kv2), 1);</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>} END_TEST</div>
+<div class="ttc" id="a_compare_8c_html_a59ee43f11a4d3a568d2c3db2d6f363c4"><div class="ttname"><a href="_compare_8c.html#a59ee43f11a4d3a568d2c3db2d6f363c4">compare_string_keys</a></div><div class="ttdeci">int compare_string_keys(void *entry_one, void *entry_two)</div><div class="ttdoc">Сравнение для реализованного типа keyvalue.</div><div class="ttdef"><b>Definition:</b> <a href="_compare_8c_source.html#l00043">Compare.c:43</a></div></div>
+<div class="ttc" id="a_keyvalue_8c_html_aaf151f3094bb9103b0054add2d0e43f4"><div class="ttname"><a href="_keyvalue_8c.html#aaf151f3094bb9103b0054add2d0e43f4">keyvalue_constructor</a></div><div class="ttdeci">struct keyvalue * keyvalue_constructor(char *key, void *value, unsigned long size)</div><div class="ttdoc">Конструктор keyvalue.</div><div class="ttdef"><b>Definition:</b> <a href="_keyvalue_8c_source.html#l00023">Keyvalue.c:23</a></div></div>
+<div class="ttc" id="astructkeyvalue_html"><div class="ttname"><a href="structkeyvalue.html">keyvalue</a></div><div class="ttdoc">Структура, хранящая ключ строку и свободный указатель на значение</div><div class="ttdef"><b>Definition:</b> <a href="_keyvalue_8h_source.html#l00016">Keyvalue.h:16</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="_compare_8c_source.html#l00043">compare_string_keys()</a> и <a class="el" href="_keyvalue_8c_source.html#l00023">keyvalue_constructor()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="check__compare_8c_a706078cd228c09ae6fe75ff08a104671_cgraph.png" border="0" usemap="#acheck__compare_8c_a706078cd228c09ae6fe75ff08a104671_cgraph" alt=""/></div>
+<map name="acheck__compare_8c_a706078cd228c09ae6fe75ff08a104671_cgraph" id="acheck__compare_8c_a706078cd228c09ae6fe75ff08a104671_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,111,57"/>
+<area shape="rect" href="_compare_8c.html#a59ee43f11a4d3a568d2c3db2d6f363c4" title="Сравнение для реализованного типа keyvalue." alt="" coords="159,5,304,32"/>
+<area shape="rect" href="_keyvalue_8c.html#aaf151f3094bb9103b0054add2d0e43f4" title="Конструктор keyvalue." alt="" coords="159,56,304,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a214612bcfc10a248ec5a55f506f17d8c" name="a214612bcfc10a248ec5a55f506f17d8c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a214612bcfc10a248ec5a55f506f17d8c">&#9670;&nbsp;</a></span>START_TEST() <span class="overload">[2/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">END_TEST START_TEST </td>
+          <td>(</td>
+          <td class="paramtype">test_with_equal_strings_keyval_by_str_compare&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="check__compare_8c_source.html">check_compare.c</a> строка <a class="el" href="check__compare_8c_source.html#l00044">44</a></p>
+<div class="fragment"><div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>                                                          {</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <span class="keywordtype">double</span> val1 = 12.213;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <span class="keywordtype">char</span>* key1 = <span class="stringliteral">&quot;test&quot;</span>;</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  <span class="keywordtype">double</span> val2 = 36.546;</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>  <span class="keyword">struct </span><a class="code hl_struct" href="structkeyvalue.html">keyvalue</a> *kv1 = <a class="code hl_function" href="_keyvalue_8c.html#aaf151f3094bb9103b0054add2d0e43f4">keyvalue_constructor</a>(key1, &amp;val1, <span class="keyword">sizeof</span>(val1));</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>  <span class="keyword">struct </span><a class="code hl_struct" href="structkeyvalue.html">keyvalue</a> *kv2 = <a class="code hl_function" href="_keyvalue_8c.html#aaf151f3094bb9103b0054add2d0e43f4">keyvalue_constructor</a>(key1, &amp;val2, <span class="keyword">sizeof</span>(val2));</div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>  ck_assert_uint_eq(<a class="code hl_function" href="_compare_8c.html#a59ee43f11a4d3a568d2c3db2d6f363c4">compare_string_keys</a>(kv1, kv2), 0);</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>} END_TEST</div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="_compare_8c_source.html#l00043">compare_string_keys()</a> и <a class="el" href="_keyvalue_8c_source.html#l00023">keyvalue_constructor()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="check__compare_8c_a214612bcfc10a248ec5a55f506f17d8c_cgraph.png" border="0" usemap="#acheck__compare_8c_a214612bcfc10a248ec5a55f506f17d8c_cgraph" alt=""/></div>
+<map name="acheck__compare_8c_a214612bcfc10a248ec5a55f506f17d8c_cgraph" id="acheck__compare_8c_a214612bcfc10a248ec5a55f506f17d8c_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,111,57"/>
+<area shape="rect" href="_compare_8c.html#a59ee43f11a4d3a568d2c3db2d6f363c4" title="Сравнение для реализованного типа keyvalue." alt="" coords="159,5,304,32"/>
+<area shape="rect" href="_keyvalue_8c.html#aaf151f3094bb9103b0054add2d0e43f4" title="Конструктор keyvalue." alt="" coords="159,56,304,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a43a70d18a6405a7ceb97eb56efcdba88" name="a43a70d18a6405a7ceb97eb56efcdba88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a43a70d18a6405a7ceb97eb56efcdba88">&#9670;&nbsp;</a></span>START_TEST() <span class="overload">[3/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">START_TEST </td>
+          <td>(</td>
+          <td class="paramtype">test_with_equal_vals_compare&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="check__compare_8c_source.html">check_compare.c</a> строка <a class="el" href="check__compare_8c_source.html#l00007">7</a></p>
+<div class="fragment"><div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>                                         {</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>  <span class="keywordtype">int</span> a = 12;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>  <span class="keywordtype">int</span> b = 12;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>  ck_assert_uint_eq(<a class="code hl_function" href="_compare_8c.html#adbb783ff4e2a922d5bea0b7a84bea4d6">compare</a>(&amp;a,&amp;b), 0);</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>} END_TEST</div>
+<div class="ttc" id="a_compare_8c_html_adbb783ff4e2a922d5bea0b7a84bea4d6"><div class="ttname"><a href="_compare_8c.html#adbb783ff4e2a922d5bea0b7a84bea4d6">compare</a></div><div class="ttdeci">int compare(void *s1, void *s2)</div><div class="ttdoc">Сравнение для int.</div><div class="ttdef"><b>Definition:</b> <a href="_compare_8c_source.html#l00023">Compare.c:23</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="_compare_8c_source.html#l00023">compare()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="check__compare_8c_a43a70d18a6405a7ceb97eb56efcdba88_cgraph.png" border="0" usemap="#acheck__compare_8c_a43a70d18a6405a7ceb97eb56efcdba88_cgraph" alt=""/></div>
+<map name="acheck__compare_8c_a43a70d18a6405a7ceb97eb56efcdba88_cgraph" id="acheck__compare_8c_a43a70d18a6405a7ceb97eb56efcdba88_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,111,32"/>
+<area shape="rect" href="_compare_8c.html#adbb783ff4e2a922d5bea0b7a84bea4d6" title="Сравнение для int." alt="" coords="159,5,231,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad60e66d02b95cf814fb5f2ae18929813" name="ad60e66d02b95cf814fb5f2ae18929813"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad60e66d02b95cf814fb5f2ae18929813">&#9670;&nbsp;</a></span>START_TEST() <span class="overload">[4/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">END_TEST START_TEST </td>
+          <td>(</td>
+          <td class="paramtype">test_with_greater_string_first_keyval_by_str_compare&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="check__compare_8c_source.html">check_compare.c</a> строка <a class="el" href="check__compare_8c_source.html#l00053">53</a></p>
+<div class="fragment"><div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>                                                                 {</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  <span class="keywordtype">double</span> val1 = 12.213;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>  <span class="keywordtype">char</span>* key1 = <span class="stringliteral">&quot;test&quot;</span>;</div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  <span class="keywordtype">double</span> val2 = 36.546;</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  <span class="keywordtype">char</span>* key2 = <span class="stringliteral">&quot;kek&quot;</span>;</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>  <span class="keyword">struct </span><a class="code hl_struct" href="structkeyvalue.html">keyvalue</a> *kv1 = <a class="code hl_function" href="_keyvalue_8c.html#aaf151f3094bb9103b0054add2d0e43f4">keyvalue_constructor</a>(key1, &amp;val1, <span class="keyword">sizeof</span>(val1));</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  <span class="keyword">struct </span><a class="code hl_struct" href="structkeyvalue.html">keyvalue</a> *kv2 = <a class="code hl_function" href="_keyvalue_8c.html#aaf151f3094bb9103b0054add2d0e43f4">keyvalue_constructor</a>(key2, &amp;val2, <span class="keyword">sizeof</span>(val2));</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  ck_assert_uint_eq(<a class="code hl_function" href="_compare_8c.html#a59ee43f11a4d3a568d2c3db2d6f363c4">compare_string_keys</a>(kv1, kv2), 1);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>} END_TEST</div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="_compare_8c_source.html#l00043">compare_string_keys()</a> и <a class="el" href="_keyvalue_8c_source.html#l00023">keyvalue_constructor()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="check__compare_8c_ad60e66d02b95cf814fb5f2ae18929813_cgraph.png" border="0" usemap="#acheck__compare_8c_ad60e66d02b95cf814fb5f2ae18929813_cgraph" alt=""/></div>
+<map name="acheck__compare_8c_ad60e66d02b95cf814fb5f2ae18929813_cgraph" id="acheck__compare_8c_ad60e66d02b95cf814fb5f2ae18929813_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,111,57"/>
+<area shape="rect" href="_compare_8c.html#a59ee43f11a4d3a568d2c3db2d6f363c4" title="Сравнение для реализованного типа keyvalue." alt="" coords="159,5,304,32"/>
+<area shape="rect" href="_keyvalue_8c.html#aaf151f3094bb9103b0054add2d0e43f4" title="Конструктор keyvalue." alt="" coords="159,56,304,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a1c2b54ca34e7e8d3d3df157970671e3d" name="a1c2b54ca34e7e8d3d3df157970671e3d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a1c2b54ca34e7e8d3d3df157970671e3d">&#9670;&nbsp;</a></span>START_TEST() <span class="overload">[5/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">END_TEST START_TEST </td>
+          <td>(</td>
+          <td class="paramtype">test_with_larger_val_first_compare&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="check__compare_8c_source.html">check_compare.c</a> строка <a class="el" href="check__compare_8c_source.html#l00019">19</a></p>
+<div class="fragment"><div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>                                               {</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  <span class="keywordtype">int</span> a = 15;</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  <span class="keywordtype">int</span> b = 12;</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  ck_assert_uint_eq(<a class="code hl_function" href="_compare_8c.html#adbb783ff4e2a922d5bea0b7a84bea4d6">compare</a>(&amp;a,&amp;b), 1);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>} END_TEST</div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="_compare_8c_source.html#l00023">compare()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="check__compare_8c_a1c2b54ca34e7e8d3d3df157970671e3d_cgraph.png" border="0" usemap="#acheck__compare_8c_a1c2b54ca34e7e8d3d3df157970671e3d_cgraph" alt=""/></div>
+<map name="acheck__compare_8c_a1c2b54ca34e7e8d3d3df157970671e3d_cgraph" id="acheck__compare_8c_a1c2b54ca34e7e8d3d3df157970671e3d_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,111,32"/>
+<area shape="rect" href="_compare_8c.html#adbb783ff4e2a922d5bea0b7a84bea4d6" title="Сравнение для int." alt="" coords="159,5,231,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad4255a817fb98e5d949053f112f9592c" name="ad4255a817fb98e5d949053f112f9592c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad4255a817fb98e5d949053f112f9592c">&#9670;&nbsp;</a></span>START_TEST() <span class="overload">[6/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">END_TEST START_TEST </td>
+          <td>(</td>
+          <td class="paramtype">test_with_negative_val_compare&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="check__compare_8c_source.html">check_compare.c</a> строка <a class="el" href="check__compare_8c_source.html#l00025">25</a></p>
+<div class="fragment"><div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>                                           {</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  <span class="keywordtype">int</span> a = -173;</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  <span class="keywordtype">int</span> b = 16;</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  ck_assert_uint_eq(<a class="code hl_function" href="_compare_8c.html#adbb783ff4e2a922d5bea0b7a84bea4d6">compare</a>(&amp;a,&amp;b), -1);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>} END_TEST</div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="_compare_8c_source.html#l00023">compare()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="check__compare_8c_ad4255a817fb98e5d949053f112f9592c_cgraph.png" border="0" usemap="#acheck__compare_8c_ad4255a817fb98e5d949053f112f9592c_cgraph" alt=""/></div>
+<map name="acheck__compare_8c_ad4255a817fb98e5d949053f112f9592c_cgraph" id="acheck__compare_8c_ad4255a817fb98e5d949053f112f9592c_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,111,32"/>
+<area shape="rect" href="_compare_8c.html#adbb783ff4e2a922d5bea0b7a84bea4d6" title="Сравнение для int." alt="" coords="159,5,231,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a38e78840b429f2cda6e9e65a64bd2db9" name="a38e78840b429f2cda6e9e65a64bd2db9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a38e78840b429f2cda6e9e65a64bd2db9">&#9670;&nbsp;</a></span>START_TEST() <span class="overload">[7/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">END_TEST START_TEST </td>
+          <td>(</td>
+          <td class="paramtype">test_with_negative_vals_compare&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="check__compare_8c_source.html">check_compare.c</a> строка <a class="el" href="check__compare_8c_source.html#l00031">31</a></p>
+<div class="fragment"><div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>                                            {</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  <span class="keywordtype">int</span> a = -12;</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  <span class="keywordtype">int</span> b = -123;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>  ck_assert_uint_eq(<a class="code hl_function" href="_compare_8c.html#adbb783ff4e2a922d5bea0b7a84bea4d6">compare</a>(&amp;a,&amp;b), 1);</div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span>} END_TEST</div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="_compare_8c_source.html#l00023">compare()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="check__compare_8c_a38e78840b429f2cda6e9e65a64bd2db9_cgraph.png" border="0" usemap="#acheck__compare_8c_a38e78840b429f2cda6e9e65a64bd2db9_cgraph" alt=""/></div>
+<map name="acheck__compare_8c_a38e78840b429f2cda6e9e65a64bd2db9_cgraph" id="acheck__compare_8c_a38e78840b429f2cda6e9e65a64bd2db9_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,111,32"/>
+<area shape="rect" href="_compare_8c.html#adbb783ff4e2a922d5bea0b7a84bea4d6" title="Сравнение для int." alt="" coords="159,5,231,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a02f937553ac48e9ad067b5237d0c9ba4" name="a02f937553ac48e9ad067b5237d0c9ba4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a02f937553ac48e9ad067b5237d0c9ba4">&#9670;&nbsp;</a></span>START_TEST() <span class="overload">[8/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">END_TEST START_TEST </td>
+          <td>(</td>
+          <td class="paramtype">test_with_nill_val_compare&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="check__compare_8c_source.html">check_compare.c</a> строка <a class="el" href="check__compare_8c_source.html#l00037">37</a></p>
+<div class="fragment"><div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>                                       {</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keywordtype">int</span> a = 0;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keywordtype">int</span> b = 12;</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  ck_assert_uint_eq(<a class="code hl_function" href="_compare_8c.html#adbb783ff4e2a922d5bea0b7a84bea4d6">compare</a>(&amp;a,&amp;b), -1);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>} END_TEST</div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="_compare_8c_source.html#l00023">compare()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="check__compare_8c_a02f937553ac48e9ad067b5237d0c9ba4_cgraph.png" border="0" usemap="#acheck__compare_8c_a02f937553ac48e9ad067b5237d0c9ba4_cgraph" alt=""/></div>
+<map name="acheck__compare_8c_a02f937553ac48e9ad067b5237d0c9ba4_cgraph" id="acheck__compare_8c_a02f937553ac48e9ad067b5237d0c9ba4_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,111,32"/>
+<area shape="rect" href="_compare_8c.html#adbb783ff4e2a922d5bea0b7a84bea4d6" title="Сравнение для int." alt="" coords="159,5,231,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="acef2e60fdcfadf0aa165c02733271476" name="acef2e60fdcfadf0aa165c02733271476"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acef2e60fdcfadf0aa165c02733271476">&#9670;&nbsp;</a></span>START_TEST() <span class="overload">[9/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">END_TEST START_TEST </td>
+          <td>(</td>
+          <td class="paramtype">test_with_smaller_string_first_keyval_by_str_compare&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="check__compare_8c_source.html">check_compare.c</a> строка <a class="el" href="check__compare_8c_source.html#l00063">63</a></p>
+<div class="fragment"><div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>                                                                 {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <span class="keywordtype">double</span> val1 = 12.213;</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  <span class="keywordtype">char</span>* key1 = <span class="stringliteral">&quot;test&quot;</span>;</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  <span class="keywordtype">double</span> val2 = 36.546;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  <span class="keywordtype">char</span>* key2 = <span class="stringliteral">&quot;kek&quot;</span>;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>  <span class="keyword">struct </span><a class="code hl_struct" href="structkeyvalue.html">keyvalue</a> *kv1 = <a class="code hl_function" href="_keyvalue_8c.html#aaf151f3094bb9103b0054add2d0e43f4">keyvalue_constructor</a>(key2, &amp;val1, <span class="keyword">sizeof</span>(val1));</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  <span class="keyword">struct </span><a class="code hl_struct" href="structkeyvalue.html">keyvalue</a> *kv2 = <a class="code hl_function" href="_keyvalue_8c.html#aaf151f3094bb9103b0054add2d0e43f4">keyvalue_constructor</a>(key1, &amp;val2, <span class="keyword">sizeof</span>(val2));</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>  ck_assert_uint_eq(<a class="code hl_function" href="_compare_8c.html#a59ee43f11a4d3a568d2c3db2d6f363c4">compare_string_keys</a>(kv1, kv2), -1);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>} END_TEST</div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="_compare_8c_source.html#l00043">compare_string_keys()</a> и <a class="el" href="_keyvalue_8c_source.html#l00023">keyvalue_constructor()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="check__compare_8c_acef2e60fdcfadf0aa165c02733271476_cgraph.png" border="0" usemap="#acheck__compare_8c_acef2e60fdcfadf0aa165c02733271476_cgraph" alt=""/></div>
+<map name="acheck__compare_8c_acef2e60fdcfadf0aa165c02733271476_cgraph" id="acheck__compare_8c_acef2e60fdcfadf0aa165c02733271476_cgraph">
+<area shape="rect" title=" " alt="" coords="5,31,111,57"/>
+<area shape="rect" href="_compare_8c.html#a59ee43f11a4d3a568d2c3db2d6f363c4" title="Сравнение для реализованного типа keyvalue." alt="" coords="159,5,304,32"/>
+<area shape="rect" href="_keyvalue_8c.html#aaf151f3094bb9103b0054add2d0e43f4" title="Конструктор keyvalue." alt="" coords="159,56,304,83"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="adf78da7bb41c9f8c4674419f4dfc753a" name="adf78da7bb41c9f8c4674419f4dfc753a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf78da7bb41c9f8c4674419f4dfc753a">&#9670;&nbsp;</a></span>START_TEST() <span class="overload">[10/10]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">END_TEST START_TEST </td>
+          <td>(</td>
+          <td class="paramtype">test_with_smaller_val_first_compare&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="check__compare_8c_source.html">check_compare.c</a> строка <a class="el" href="check__compare_8c_source.html#l00013">13</a></p>
+<div class="fragment"><div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>                                                {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  <span class="keywordtype">int</span> a = 7;</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  <span class="keywordtype">int</span> b = 12;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  ck_assert_uint_eq(<a class="code hl_function" href="_compare_8c.html#adbb783ff4e2a922d5bea0b7a84bea4d6">compare</a>(&amp;a,&amp;b), -1);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>} END_TEST</div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="_compare_8c_source.html#l00023">compare()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="check__compare_8c_adf78da7bb41c9f8c4674419f4dfc753a_cgraph.png" border="0" usemap="#acheck__compare_8c_adf78da7bb41c9f8c4674419f4dfc753a_cgraph" alt=""/></div>
+<map name="acheck__compare_8c_adf78da7bb41c9f8c4674419f4dfc753a_cgraph" id="acheck__compare_8c_adf78da7bb41c9f8c4674419f4dfc753a_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,111,32"/>
+<area shape="rect" href="_compare_8c.html#adbb783ff4e2a922d5bea0b7a84bea4d6" title="Сравнение для int." alt="" coords="159,5,231,32"/>
+</map>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по Лабораторная работа №4 по предмету программирование МФ МГТУ им. Н.Э. Баумана. Последние изменения: Чт 16 Фев 2023 13:00:39. Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+</small></address>
+</body>
+</html>

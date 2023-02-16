@@ -1,0 +1,7 @@
+<map id="START_TEST" name="START_TEST">
+<area shape="rect" id="node1" title=" " alt="" coords="5,85,111,112"/>
+<area shape="rect" id="node2" href="$_compare_8c.html#adbb783ff4e2a922d5bea0b7a84bea4d6" title="Сравнение для int." alt="" coords="273,48,345,75"/>
+<area shape="rect" id="node3" href="$_binary_search_tree_8c.html#aaf66bb89347a6666796a4b73a0b591a5" title="Вставка элемента" alt="" coords="162,123,217,149"/>
+<area shape="rect" id="node4" href="$_binary_search_tree_8c.html#a0f07215c1e0085d7bf68dd5b7f104032" title="Вставка элемента" alt="" coords="268,148,349,175"/>
+<area shape="rect" id="node5" href="$_binary_search_tree_8c.html#a55664d31f1e7175febadee53e11b8fc5" title="Поиск элемента в дереве" alt="" coords="159,48,220,75"/>
+</map>

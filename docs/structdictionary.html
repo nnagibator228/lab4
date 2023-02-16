@@ -1,0 +1,237 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Лабораторная работа №4 по предмету программирование МФ МГТУ им. Н.Э. Баумана: Структура dictionary</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Лабораторная работа №4 по предмету программирование МФ МГТУ им. Н.Э. Баумана
+   </div>
+   <div id="projectbrief">Реализация абстрактной структуры данных словарь</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Поля данных</a>  </div>
+  <div class="headertitle"><div class="title">Структура dictionary</div></div>
+</div><!--header-->
+<div class="contents">
+
+<p>Абстрактная структура словаря  
+ <a href="structdictionary.html#details">Подробнее...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_dictionary_8h_source.html">Dictionary.h</a>&gt;</code></p>
+<div class="dynheader">
+Граф связей класса dictionary:</div>
+<div class="dyncontent">
+<div class="center"><img src="structdictionary__coll__graph.png" border="0" usemap="#adictionary_coll__map" alt="Collaboration graph"/></div>
+<map name="adictionary_coll__map" id="adictionary_coll__map">
+<area shape="rect" title="Абстрактная структура словаря" alt="" coords="419,208,496,235"/>
+<area shape="rect" href="structnode.html" title="Основной элемент бинарного дерева" alt="" coords="205,59,255,85"/>
+<area shape="rect" title=" " alt="" coords="5,79,60,105"/>
+<area shape="rect" href="structkeyvalue.html" title="Структура, хранящая ключ строку и свободный указатель на значение" alt="" coords="193,109,267,136"/>
+<area shape="rect" title=" " alt="" coords="159,161,301,202"/>
+<area shape="rect" title=" " alt="" coords="143,226,317,297"/>
+<area shape="rect" title=" " alt="" coords="5,149,60,176"/>
+<area shape="rect" title=" " alt="" coords="153,321,307,362"/>
+<area shape="rect" title=" " alt="" coords="168,387,292,413"/>
+</map>
+<center><span class="legend">[<a href="graph_legend.html">см. легенду</a>]</span></center></div>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-attribs" name="pub-attribs"></a>
+Поля данных</h2></td></tr>
+<tr class="memitem:ac6c89915706cac6d89dbed1ed07d46d6"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structnode.html">node</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdictionary.html#ac6c89915706cac6d89dbed1ed07d46d6">root</a></td></tr>
+<tr class="separator:ac6c89915706cac6d89dbed1ed07d46d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abdf1acceec7f94e7ae6b760ce8957e71"><td class="memItemLeft" align="right" valign="top">int(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdictionary.html#abdf1acceec7f94e7ae6b760ce8957e71">compare</a> )(void *data_one, void *data_two)</td></tr>
+<tr class="separator:abdf1acceec7f94e7ae6b760ce8957e71"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0531fe7c9f688e136e1765f4eb0d982"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdictionary.html#aa0531fe7c9f688e136e1765f4eb0d982">insert</a> )(struct <a class="el" href="structdictionary.html">dictionary</a> *<a class="el" href="structdictionary.html">dictionary</a>, char *key, void *value, unsigned long value_size)</td></tr>
+<tr class="separator:aa0531fe7c9f688e136e1765f4eb0d982"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86a703e342eb16e287c0d2bed88f317e"><td class="memItemLeft" align="right" valign="top">struct <a class="el" href="structkeyvalue.html">keyvalue</a> *(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdictionary.html#a86a703e342eb16e287c0d2bed88f317e">search</a> )(struct <a class="el" href="structdictionary.html">dictionary</a> *<a class="el" href="structdictionary.html">dictionary</a>, char *key)</td></tr>
+<tr class="separator:a86a703e342eb16e287c0d2bed88f317e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14ef5554661a41bba11083f495ba71a4"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdictionary.html#a14ef5554661a41bba11083f495ba71a4">remove</a> )(struct <a class="el" href="structdictionary.html">dictionary</a> *<a class="el" href="structdictionary.html">dictionary</a>, char *key)</td></tr>
+<tr class="separator:a14ef5554661a41bba11083f495ba71a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab6b709249916fab2c82c959827f81bfb"><td class="memItemLeft" align="right" valign="top">void(*&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="structdictionary.html#ab6b709249916fab2c82c959827f81bfb">print</a> )(void *data)</td></tr>
+<tr class="separator:ab6b709249916fab2c82c959827f81bfb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><p >Абстрактная структура словаря </p>
+<p >Использует структуры keyvalue и node для реализации словаря на базе бинарного дерева </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_dictionary_8h_source.html">Dictionary.h</a> строка <a class="el" href="_dictionary_8h_source.html#l00018">18</a></p>
+</div><h2 class="groupheader">Поля</h2>
+<a id="abdf1acceec7f94e7ae6b760ce8957e71" name="abdf1acceec7f94e7ae6b760ce8957e71"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abdf1acceec7f94e7ae6b760ce8957e71">&#9670;&nbsp;</a></span>compare</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int(* dictionary::compare) (void *data_one, void *data_two)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Указатель на функцию сравнения элементов keyvalue </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_dictionary_8h_source.html">Dictionary.h</a> строка <a class="el" href="_dictionary_8h_source.html#l00022">22</a></p>
+
+<p class="reference">Используется в <a class="el" href="_dictionary_8c_source.html#l00029">dictionary_constructor()</a>, <a class="el" href="_dictionary_8c_source.html#l00085">insert_dict()</a>, <a class="el" href="_dictionary_8c_source.html#l00120">remove_dict()</a>, <a class="el" href="_dictionary_8c_source.html#l00099">search_dict()</a> и <a class="el" href="check__dictionary_8c_source.html#l00010">START_TEST()</a>.</p>
+
+</div>
+</div>
+<a id="aa0531fe7c9f688e136e1765f4eb0d982" name="aa0531fe7c9f688e136e1765f4eb0d982"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0531fe7c9f688e136e1765f4eb0d982">&#9670;&nbsp;</a></span>insert</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* dictionary::insert) (struct <a class="el" href="structdictionary.html">dictionary</a> *<a class="el" href="structdictionary.html">dictionary</a>, char *key, void *value, unsigned long value_size)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Указатель на функцию вставки нового элемента словаря в ДБП (назначается на основе приватнореализованной функции) </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_dictionary_8h_source.html">Dictionary.h</a> строка <a class="el" href="_dictionary_8h_source.html#l00024">24</a></p>
+
+<p class="reference">Используется в <a class="el" href="_dictionary_8c_source.html#l00029">dictionary_constructor()</a>, <a class="el" href="main_8c_source.html#l00020">main()</a> и <a class="el" href="check__dictionary_8c_source.html#l00021">START_TEST()</a>.</p>
+
+</div>
+</div>
+<a id="ab6b709249916fab2c82c959827f81bfb" name="ab6b709249916fab2c82c959827f81bfb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab6b709249916fab2c82c959827f81bfb">&#9670;&nbsp;</a></span>print</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* dictionary::print) (void *data)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Указатель на функцию вывода элементов словаря </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_dictionary_8h_source.html">Dictionary.h</a> строка <a class="el" href="_dictionary_8h_source.html#l00030">30</a></p>
+
+<p class="reference">Используется в <a class="el" href="_dictionary_8c_source.html#l00029">dictionary_constructor()</a> и <a class="el" href="_dictionary_8c_source.html#l00133">dictionary_print()</a>.</p>
+
+</div>
+</div>
+<a id="a14ef5554661a41bba11083f495ba71a4" name="a14ef5554661a41bba11083f495ba71a4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14ef5554661a41bba11083f495ba71a4">&#9670;&nbsp;</a></span>remove</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void(* dictionary::remove) (struct <a class="el" href="structdictionary.html">dictionary</a> *<a class="el" href="structdictionary.html">dictionary</a>, char *key)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Указатель на функцию удаления элемента словаря в ДБП (назначается на основе приватнореализованной функции) </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_dictionary_8h_source.html">Dictionary.h</a> строка <a class="el" href="_dictionary_8h_source.html#l00028">28</a></p>
+
+<p class="reference">Используется в <a class="el" href="_dictionary_8c_source.html#l00029">dictionary_constructor()</a>, <a class="el" href="main_8c_source.html#l00020">main()</a> и <a class="el" href="check__dictionary_8c_source.html#l00064">START_TEST()</a>.</p>
+
+</div>
+</div>
+<a id="ac6c89915706cac6d89dbed1ed07d46d6" name="ac6c89915706cac6d89dbed1ed07d46d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac6c89915706cac6d89dbed1ed07d46d6">&#9670;&nbsp;</a></span>root</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structnode.html">node</a>* dictionary::root</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Указатель на корневую ноду БДП </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_dictionary_8h_source.html">Dictionary.h</a> строка <a class="el" href="_dictionary_8h_source.html#l00020">20</a></p>
+
+<p class="reference">Используется в <a class="el" href="_dictionary_8c_source.html#l00029">dictionary_constructor()</a>, <a class="el" href="_dictionary_8c_source.html#l00047">dictionary_destructor()</a>, <a class="el" href="_dictionary_8c_source.html#l00133">dictionary_print()</a>, <a class="el" href="_dictionary_8c_source.html#l00085">insert_dict()</a>, <a class="el" href="_dictionary_8c_source.html#l00059">recursive_dictionary_destroy()</a>, <a class="el" href="_dictionary_8c_source.html#l00120">remove_dict()</a>, <a class="el" href="_dictionary_8c_source.html#l00099">search_dict()</a> и <a class="el" href="check__dictionary_8c_source.html#l00029">START_TEST()</a>.</p>
+
+</div>
+</div>
+<a id="a86a703e342eb16e287c0d2bed88f317e" name="a86a703e342eb16e287c0d2bed88f317e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a86a703e342eb16e287c0d2bed88f317e">&#9670;&nbsp;</a></span>search</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">struct <a class="el" href="structkeyvalue.html">keyvalue</a> *(* dictionary::search) (struct <a class="el" href="structdictionary.html">dictionary</a> *<a class="el" href="structdictionary.html">dictionary</a>, char *key)</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<p >Указатель на функцию поиска элемента словаря в ДБП (назначается на основе приватнореализованной функции) </p>
+
+<p class="definition">См. определение в файле <a class="el" href="_dictionary_8h_source.html">Dictionary.h</a> строка <a class="el" href="_dictionary_8h_source.html#l00024">24</a></p>
+
+<p class="reference">Используется в <a class="el" href="_dictionary_8c_source.html#l00029">dictionary_constructor()</a>, <a class="el" href="main_8c_source.html#l00020">main()</a> и <a class="el" href="check__dictionary_8c_source.html#l00021">START_TEST()</a>.</p>
+
+</div>
+</div>
+<hr/>Объявления и описания членов структуры находятся в файле:<ul>
+<li>src/Dict/<a class="el" href="_dictionary_8h_source.html">Dictionary.h</a></li>
+</ul>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по Лабораторная работа №4 по предмету программирование МФ МГТУ им. Н.Э. Баумана. Последние изменения: Чт 16 Фев 2023 13:00:39. Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+</small></address>
+</body>
+</html>

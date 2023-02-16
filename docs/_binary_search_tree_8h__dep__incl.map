@@ -1,0 +1,9 @@
+<map id="src/BST/BinarySearchTree.h" name="src/BST/BinarySearchTree.h">
+<area shape="rect" id="node1" title="Header&#45;файл реализации структуры Дерева Бинарного Поиска" alt="" coords="192,5,379,32"/>
+<area shape="rect" id="node2" href="$_binary_search_tree_8c.html" title=" " alt="" coords="5,80,192,107"/>
+<area shape="rect" id="node3" href="$_dictionary_8h.html" title="Header&#45;файл реализации структуры Словаря на базе Дерева Бинарного Поиска" alt="" coords="216,80,355,107"/>
+<area shape="rect" id="node7" href="$check__binarysearchtree_8c.html" title=" " alt="" coords="379,80,603,107"/>
+<area shape="rect" id="node4" href="$_dictionary_8c.html" title="Основной файл функций compare." alt="" coords="81,155,220,181"/>
+<area shape="rect" id="node5" href="$main_8c.html" title="Заголовочный файл с описанием классов. Тестовая версия #2." alt="" coords="244,155,327,181"/>
+<area shape="rect" id="node6" href="$check__dictionary_8c.html" title=" " alt="" coords="351,155,535,181"/>
+</map>

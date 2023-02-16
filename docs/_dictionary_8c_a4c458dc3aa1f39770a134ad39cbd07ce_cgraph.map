@@ -1,0 +1,6 @@
+<map id="search_dict" name="search_dict">
+<area shape="rect" id="node1" title="Поиск элемента в словаре" alt="" coords="5,43,95,69"/>
+<area shape="rect" id="node2" href="$_keyvalue_8c.html#aaf151f3094bb9103b0054add2d0e43f4" title="Конструктор keyvalue." alt="" coords="143,5,288,32"/>
+<area shape="rect" id="node3" href="$_binary_search_tree_8c.html#a55664d31f1e7175febadee53e11b8fc5" title="Поиск элемента в дереве" alt="" coords="185,80,246,107"/>
+<area shape="rect" id="node4" href="$_compare_8c.html#adbb783ff4e2a922d5bea0b7a84bea4d6" title="Сравнение для int." alt="" coords="336,80,408,107"/>
+</map>

@@ -1,0 +1,438 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=11"/>
+<meta name="generator" content="Doxygen 1.9.2"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Лабораторная работа №4 по предмету программирование МФ МГТУ им. Н.Э. Баумана: Файл src/tests/check_keyvalue.c</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Лабораторная работа №4 по предмету программирование МФ МГТУ им. Н.Э. Баумана
+   </div>
+   <div id="projectbrief">Реализация абстрактной структуры данных словарь</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.2 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+var searchBox = new SearchBox("searchBox", "search",'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:d3d9a9a6595521f9666a5e94cc830dab83b65699&amp;dn=expat.txt MIT */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_68267d1309a1af8e8297ef4c3efbcdba.html">src</a></li><li class="navelem"><a class="el" href="dir_d93a1d4020dea85bb71b237545b5e722.html">tests</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#func-members">Функции</a>  </div>
+  <div class="headertitle"><div class="title">Файл check_keyvalue.c</div></div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &lt;check.h&gt;</code><br />
+<code>#include &quot;<a class="el" href="_keyvalue_8h_source.html">../Common/Keyvalue.h</a>&quot;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для check_keyvalue.c:</div>
+<div class="dyncontent">
+<div class="center"><img src="check__keyvalue_8c__incl.png" border="0" usemap="#asrc_2tests_2check__keyvalue_8c" alt=""/></div>
+<map name="asrc_2tests_2check__keyvalue_8c" id="asrc_2tests_2check__keyvalue_8c">
+<area shape="rect" title=" " alt="" coords="213,5,393,32"/>
+<area shape="rect" title=" " alt="" coords="5,80,72,107"/>
+<area shape="rect" href="_keyvalue_8h.html" title="Header&#45;файл реализации структуры keyvalue." alt="" coords="97,80,247,107"/>
+<area shape="rect" title=" " alt="" coords="271,80,334,107"/>
+<area shape="rect" title=" " alt="" coords="359,80,423,107"/>
+<area shape="rect" title=" " alt="" coords="447,80,507,107"/>
+</map>
+</div>
+</div>
+<p><a href="check__keyvalue_8c_source.html">См. исходные тексты.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Функции</h2></td></tr>
+<tr class="memitem:ad33a1e2ad463ad2333c1a67edca801ec"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="check__keyvalue_8c.html#ad33a1e2ad463ad2333c1a67edca801ec">START_TEST</a> (test_keyval_value_doubletype_field)</td></tr>
+<tr class="separator:ad33a1e2ad463ad2333c1a67edca801ec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4bac14c08d8b322ab3aed550021048e0"><td class="memItemLeft" align="right" valign="top">END_TEST&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="check__keyvalue_8c.html#a4bac14c08d8b322ab3aed550021048e0">START_TEST</a> (test_keyval_value_inttype_field)</td></tr>
+<tr class="separator:a4bac14c08d8b322ab3aed550021048e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adf900c802cdfbb97f51b18132c49eb35"><td class="memItemLeft" align="right" valign="top">END_TEST&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="check__keyvalue_8c.html#adf900c802cdfbb97f51b18132c49eb35">START_TEST</a> (test_keyval_value_chartype_field)</td></tr>
+<tr class="separator:adf900c802cdfbb97f51b18132c49eb35"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a44330165db76d34e394c928d264d39d6"><td class="memItemLeft" align="right" valign="top">END_TEST&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="check__keyvalue_8c.html#a44330165db76d34e394c928d264d39d6">START_TEST</a> (test_keyval_value_pointertype_field)</td></tr>
+<tr class="separator:a44330165db76d34e394c928d264d39d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab448d9d67a330f7b15a04591d5a01cb3"><td class="memItemLeft" align="right" valign="top">END_TEST&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="check__keyvalue_8c.html#ab448d9d67a330f7b15a04591d5a01cb3">START_TEST</a> (test_keyval_key_field)</td></tr>
+<tr class="separator:ab448d9d67a330f7b15a04591d5a01cb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab60ab3e4ca59c1fa9e41a21d04b8a54a"><td class="memItemLeft" align="right" valign="top">END_TEST&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="check__keyvalue_8c.html#ab60ab3e4ca59c1fa9e41a21d04b8a54a">START_TEST</a> (test_keyval_key_empty_field)</td></tr>
+<tr class="separator:ab60ab3e4ca59c1fa9e41a21d04b8a54a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa675caec1022b649bd5ce0531fb9adec"><td class="memItemLeft" align="right" valign="top">END_TEST Suite *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="check__keyvalue_8c.html#aa675caec1022b649bd5ce0531fb9adec">compare_suite</a> (void)</td></tr>
+<tr class="separator:aa675caec1022b649bd5ce0531fb9adec"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a840291bc02cba5474a4cb46a9b9566fe"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="check__keyvalue_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main</a> (void)</td></tr>
+<tr class="separator:a840291bc02cba5474a4cb46a9b9566fe"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<h2 class="groupheader">Функции</h2>
+<a id="aa675caec1022b649bd5ce0531fb9adec" name="aa675caec1022b649bd5ce0531fb9adec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa675caec1022b649bd5ce0531fb9adec">&#9670;&nbsp;</a></span>compare_suite()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">END_TEST Suite * compare_suite </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="check__keyvalue_8c_source.html">check_keyvalue.c</a> строка <a class="el" href="check__keyvalue_8c_source.html#l00052">52</a></p>
+<div class="fragment"><div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>                           {</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>  Suite *s;</div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>  TCase *tc_core;</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span> </div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>  s = suite_create(<span class="stringliteral">&quot;KeyvalueTest&quot;</span>);</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>  tc_core = tcase_create(<span class="stringliteral">&quot;Core&quot;</span>);</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>  tcase_add_test(tc_core, test_keyval_value_doubletype_field);</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  tcase_add_test(tc_core, test_keyval_value_inttype_field);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>  tcase_add_test(tc_core, test_keyval_value_chartype_field);</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  tcase_add_test(tc_core, test_keyval_value_pointertype_field);</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  tcase_add_test(tc_core, test_keyval_key_field);</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  tcase_add_test(tc_core, test_keyval_key_empty_field);</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  suite_add_tcase(s, tc_core);</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  <span class="keywordflow">return</span> s;</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>}</div>
+</div><!-- fragment -->
+<p class="reference">Используется в <a class="el" href="check__keyvalue_8c_source.html#l00070">main()</a>.</p>
+<div class="dynheader">
+Граф вызова функции:</div>
+<div class="dyncontent">
+<div class="center"><img src="check__keyvalue_8c_aa675caec1022b649bd5ce0531fb9adec_icgraph.png" border="0" usemap="#acheck__keyvalue_8c_aa675caec1022b649bd5ce0531fb9adec_icgraph" alt=""/></div>
+<map name="acheck__keyvalue_8c_aa675caec1022b649bd5ce0531fb9adec_icgraph" id="acheck__keyvalue_8c_aa675caec1022b649bd5ce0531fb9adec_icgraph">
+<area shape="rect" title=" " alt="" coords="104,5,211,32"/>
+<area shape="rect" href="check__keyvalue_8c.html#a840291bc02cba5474a4cb46a9b9566fe" title=" " alt="" coords="5,5,56,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a840291bc02cba5474a4cb46a9b9566fe" name="a840291bc02cba5474a4cb46a9b9566fe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a840291bc02cba5474a4cb46a9b9566fe">&#9670;&nbsp;</a></span>main()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int main </td>
+          <td>(</td>
+          <td class="paramtype">void&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="check__keyvalue_8c_source.html">check_keyvalue.c</a> строка <a class="el" href="check__keyvalue_8c_source.html#l00070">70</a></p>
+<div class="fragment"><div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>               {</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  Suite *s = <a class="code hl_function" href="check__keyvalue_8c.html#aa675caec1022b649bd5ce0531fb9adec">compare_suite</a>();</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>  SRunner *runner = srunner_create(s);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span> </div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>  srunner_run_all(runner, CK_NORMAL);</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>  <span class="keywordtype">int</span> no_failed = srunner_ntests_failed(runner);</div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>  srunner_free(runner);</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>  <span class="keywordflow">return</span> (no_failed == 0) ? EXIT_SUCCESS : EXIT_FAILURE;</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>}</div>
+<div class="ttc" id="acheck__keyvalue_8c_html_aa675caec1022b649bd5ce0531fb9adec"><div class="ttname"><a href="check__keyvalue_8c.html#aa675caec1022b649bd5ce0531fb9adec">compare_suite</a></div><div class="ttdeci">END_TEST Suite * compare_suite(void)</div><div class="ttdef"><b>Definition:</b> <a href="check__keyvalue_8c_source.html#l00052">check_keyvalue.c:52</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="check__keyvalue_8c_source.html#l00052">compare_suite()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="check__keyvalue_8c_a840291bc02cba5474a4cb46a9b9566fe_cgraph.png" border="0" usemap="#acheck__keyvalue_8c_a840291bc02cba5474a4cb46a9b9566fe_cgraph" alt=""/></div>
+<map name="acheck__keyvalue_8c_a840291bc02cba5474a4cb46a9b9566fe_cgraph" id="acheck__keyvalue_8c_a840291bc02cba5474a4cb46a9b9566fe_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,56,32"/>
+<area shape="rect" href="check__keyvalue_8c.html#aa675caec1022b649bd5ce0531fb9adec" title=" " alt="" coords="104,5,211,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab60ab3e4ca59c1fa9e41a21d04b8a54a" name="ab60ab3e4ca59c1fa9e41a21d04b8a54a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab60ab3e4ca59c1fa9e41a21d04b8a54a">&#9670;&nbsp;</a></span>START_TEST() <span class="overload">[1/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">END_TEST START_TEST </td>
+          <td>(</td>
+          <td class="paramtype">test_keyval_key_empty_field&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="check__keyvalue_8c_source.html">check_keyvalue.c</a> строка <a class="el" href="check__keyvalue_8c_source.html#l00043">43</a></p>
+<div class="fragment"><div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>                                        {</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>  <span class="keywordtype">double</span> val1 = 12.231;</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>  <span class="keywordtype">char</span>* key1 = <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>  <span class="keyword">struct </span><a class="code hl_struct" href="structkeyvalue.html">keyvalue</a> *kv1 = <a class="code hl_function" href="_keyvalue_8c.html#aaf151f3094bb9103b0054add2d0e43f4">keyvalue_constructor</a>(key1, &amp;val1, <span class="keyword">sizeof</span>(val1));</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>  ck_assert_uint_eq(strcmp((<span class="keywordtype">char</span> *)(kv1-&gt;<a class="code hl_variable" href="structkeyvalue.html#a73ca0d9686fe6c912a32ce6afd178e10">key</a>), (<span class="keywordtype">char</span> *)(key1)), 0);</div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>} END_TEST</div>
+<div class="ttc" id="a_keyvalue_8c_html_aaf151f3094bb9103b0054add2d0e43f4"><div class="ttname"><a href="_keyvalue_8c.html#aaf151f3094bb9103b0054add2d0e43f4">keyvalue_constructor</a></div><div class="ttdeci">struct keyvalue * keyvalue_constructor(char *key, void *value, unsigned long size)</div><div class="ttdoc">Конструктор keyvalue.</div><div class="ttdef"><b>Definition:</b> <a href="_keyvalue_8c_source.html#l00023">Keyvalue.c:23</a></div></div>
+<div class="ttc" id="astructkeyvalue_html"><div class="ttname"><a href="structkeyvalue.html">keyvalue</a></div><div class="ttdoc">Структура, хранящая ключ строку и свободный указатель на значение</div><div class="ttdef"><b>Definition:</b> <a href="_keyvalue_8h_source.html#l00016">Keyvalue.h:16</a></div></div>
+<div class="ttc" id="astructkeyvalue_html_a73ca0d9686fe6c912a32ce6afd178e10"><div class="ttname"><a href="structkeyvalue.html#a73ca0d9686fe6c912a32ce6afd178e10">keyvalue::key</a></div><div class="ttdeci">char * key</div><div class="ttdef"><b>Definition:</b> <a href="_keyvalue_8h_source.html#l00018">Keyvalue.h:18</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="_keyvalue_8h_source.html#l00018">keyvalue::key</a> и <a class="el" href="_keyvalue_8c_source.html#l00023">keyvalue_constructor()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="check__keyvalue_8c_ab60ab3e4ca59c1fa9e41a21d04b8a54a_cgraph.png" border="0" usemap="#acheck__keyvalue_8c_ab60ab3e4ca59c1fa9e41a21d04b8a54a_cgraph" alt=""/></div>
+<map name="acheck__keyvalue_8c_ab60ab3e4ca59c1fa9e41a21d04b8a54a_cgraph" id="acheck__keyvalue_8c_ab60ab3e4ca59c1fa9e41a21d04b8a54a_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,111,32"/>
+<area shape="rect" href="_keyvalue_8c.html#aaf151f3094bb9103b0054add2d0e43f4" title="Конструктор keyvalue." alt="" coords="159,5,304,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ab448d9d67a330f7b15a04591d5a01cb3" name="ab448d9d67a330f7b15a04591d5a01cb3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab448d9d67a330f7b15a04591d5a01cb3">&#9670;&nbsp;</a></span>START_TEST() <span class="overload">[2/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">END_TEST START_TEST </td>
+          <td>(</td>
+          <td class="paramtype">test_keyval_key_field&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="check__keyvalue_8c_source.html">check_keyvalue.c</a> строка <a class="el" href="check__keyvalue_8c_source.html#l00036">36</a></p>
+<div class="fragment"><div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span>                                  {</div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span>  <span class="keywordtype">double</span> val1 = 12.231;</div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span>  <span class="keywordtype">char</span>* key1 = <span class="stringliteral">&quot;kkk&quot;</span>;</div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span>  <span class="keyword">struct </span><a class="code hl_struct" href="structkeyvalue.html">keyvalue</a> *kv1 = <a class="code hl_function" href="_keyvalue_8c.html#aaf151f3094bb9103b0054add2d0e43f4">keyvalue_constructor</a>(key1, &amp;val1, <span class="keyword">sizeof</span>(val1));</div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span>  ck_assert_uint_eq(strcmp((<span class="keywordtype">char</span> *)(kv1-&gt;<a class="code hl_variable" href="structkeyvalue.html#a73ca0d9686fe6c912a32ce6afd178e10">key</a>), (<span class="keywordtype">char</span> *)(key1)), 0);</div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>} END_TEST</div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="_keyvalue_8h_source.html#l00018">keyvalue::key</a> и <a class="el" href="_keyvalue_8c_source.html#l00023">keyvalue_constructor()</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="check__keyvalue_8c_ab448d9d67a330f7b15a04591d5a01cb3_cgraph.png" border="0" usemap="#acheck__keyvalue_8c_ab448d9d67a330f7b15a04591d5a01cb3_cgraph" alt=""/></div>
+<map name="acheck__keyvalue_8c_ab448d9d67a330f7b15a04591d5a01cb3_cgraph" id="acheck__keyvalue_8c_ab448d9d67a330f7b15a04591d5a01cb3_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,111,32"/>
+<area shape="rect" href="_keyvalue_8c.html#aaf151f3094bb9103b0054add2d0e43f4" title="Конструктор keyvalue." alt="" coords="159,5,304,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="adf900c802cdfbb97f51b18132c49eb35" name="adf900c802cdfbb97f51b18132c49eb35"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adf900c802cdfbb97f51b18132c49eb35">&#9670;&nbsp;</a></span>START_TEST() <span class="overload">[3/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">END_TEST START_TEST </td>
+          <td>(</td>
+          <td class="paramtype">test_keyval_value_chartype_field&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="check__keyvalue_8c_source.html">check_keyvalue.c</a> строка <a class="el" href="check__keyvalue_8c_source.html#l00021">21</a></p>
+<div class="fragment"><div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>                                             {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  <span class="keywordtype">char</span> val1 = <span class="charliteral">&#39;n&#39;</span>;</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <span class="keywordtype">char</span>* key1 = <span class="stringliteral">&quot;kkk&quot;</span>;</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>  <span class="keyword">struct </span><a class="code hl_struct" href="structkeyvalue.html">keyvalue</a> *kv1 = <a class="code hl_function" href="_keyvalue_8c.html#aaf151f3094bb9103b0054add2d0e43f4">keyvalue_constructor</a>(key1, &amp;val1, <span class="keyword">sizeof</span>(val1));</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>  ck_assert_uint_eq(*((<span class="keywordtype">char</span>*)(kv1-&gt;<a class="code hl_variable" href="structkeyvalue.html#a963e7b2cc60458177f86a60df21ea421">value</a>)), val1);</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>} END_TEST</div>
+<div class="ttc" id="astructkeyvalue_html_a963e7b2cc60458177f86a60df21ea421"><div class="ttname"><a href="structkeyvalue.html#a963e7b2cc60458177f86a60df21ea421">keyvalue::value</a></div><div class="ttdeci">void * value</div><div class="ttdef"><b>Definition:</b> <a href="_keyvalue_8h_source.html#l00020">Keyvalue.h:20</a></div></div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="_keyvalue_8c_source.html#l00023">keyvalue_constructor()</a> и <a class="el" href="_keyvalue_8h_source.html#l00020">keyvalue::value</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="check__keyvalue_8c_adf900c802cdfbb97f51b18132c49eb35_cgraph.png" border="0" usemap="#acheck__keyvalue_8c_adf900c802cdfbb97f51b18132c49eb35_cgraph" alt=""/></div>
+<map name="acheck__keyvalue_8c_adf900c802cdfbb97f51b18132c49eb35_cgraph" id="acheck__keyvalue_8c_adf900c802cdfbb97f51b18132c49eb35_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,111,32"/>
+<area shape="rect" href="_keyvalue_8c.html#aaf151f3094bb9103b0054add2d0e43f4" title="Конструктор keyvalue." alt="" coords="159,5,304,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="ad33a1e2ad463ad2333c1a67edca801ec" name="ad33a1e2ad463ad2333c1a67edca801ec"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad33a1e2ad463ad2333c1a67edca801ec">&#9670;&nbsp;</a></span>START_TEST() <span class="overload">[4/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">START_TEST </td>
+          <td>(</td>
+          <td class="paramtype">test_keyval_value_doubletype_field&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="check__keyvalue_8c_source.html">check_keyvalue.c</a> строка <a class="el" href="check__keyvalue_8c_source.html#l00007">7</a></p>
+<div class="fragment"><div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>                                               {</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>  <span class="keywordtype">double</span> val1 = 12.213;</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>  <span class="keywordtype">char</span>* key1 = <span class="stringliteral">&quot;kkk&quot;</span>;</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>  <span class="keyword">struct </span><a class="code hl_struct" href="structkeyvalue.html">keyvalue</a> *kv1 = <a class="code hl_function" href="_keyvalue_8c.html#aaf151f3094bb9103b0054add2d0e43f4">keyvalue_constructor</a>(key1, &amp;val1, <span class="keyword">sizeof</span>(val1));</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>  ck_assert_uint_eq(*((<span class="keywordtype">double</span>*)(kv1-&gt;<a class="code hl_variable" href="structkeyvalue.html#a963e7b2cc60458177f86a60df21ea421">value</a>)), val1);</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>} END_TEST</div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="_keyvalue_8c_source.html#l00023">keyvalue_constructor()</a> и <a class="el" href="_keyvalue_8h_source.html#l00020">keyvalue::value</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="check__keyvalue_8c_ad33a1e2ad463ad2333c1a67edca801ec_cgraph.png" border="0" usemap="#acheck__keyvalue_8c_ad33a1e2ad463ad2333c1a67edca801ec_cgraph" alt=""/></div>
+<map name="acheck__keyvalue_8c_ad33a1e2ad463ad2333c1a67edca801ec_cgraph" id="acheck__keyvalue_8c_ad33a1e2ad463ad2333c1a67edca801ec_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,111,32"/>
+<area shape="rect" href="_keyvalue_8c.html#aaf151f3094bb9103b0054add2d0e43f4" title="Конструктор keyvalue." alt="" coords="159,5,304,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a4bac14c08d8b322ab3aed550021048e0" name="a4bac14c08d8b322ab3aed550021048e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4bac14c08d8b322ab3aed550021048e0">&#9670;&nbsp;</a></span>START_TEST() <span class="overload">[5/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">END_TEST START_TEST </td>
+          <td>(</td>
+          <td class="paramtype">test_keyval_value_inttype_field&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="check__keyvalue_8c_source.html">check_keyvalue.c</a> строка <a class="el" href="check__keyvalue_8c_source.html#l00014">14</a></p>
+<div class="fragment"><div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>                                            {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  <span class="keywordtype">int</span> val1 = 15;</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  <span class="keywordtype">char</span>* key1 = <span class="stringliteral">&quot;kkk&quot;</span>;</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  <span class="keyword">struct </span><a class="code hl_struct" href="structkeyvalue.html">keyvalue</a> *kv1 = <a class="code hl_function" href="_keyvalue_8c.html#aaf151f3094bb9103b0054add2d0e43f4">keyvalue_constructor</a>(key1, &amp;val1, <span class="keyword">sizeof</span>(val1));</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>  ck_assert_uint_eq(*((<span class="keywordtype">int</span>*)(kv1-&gt;<a class="code hl_variable" href="structkeyvalue.html#a963e7b2cc60458177f86a60df21ea421">value</a>)), val1);</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>} END_TEST</div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="_keyvalue_8c_source.html#l00023">keyvalue_constructor()</a> и <a class="el" href="_keyvalue_8h_source.html#l00020">keyvalue::value</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="check__keyvalue_8c_a4bac14c08d8b322ab3aed550021048e0_cgraph.png" border="0" usemap="#acheck__keyvalue_8c_a4bac14c08d8b322ab3aed550021048e0_cgraph" alt=""/></div>
+<map name="acheck__keyvalue_8c_a4bac14c08d8b322ab3aed550021048e0_cgraph" id="acheck__keyvalue_8c_a4bac14c08d8b322ab3aed550021048e0_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,111,32"/>
+<area shape="rect" href="_keyvalue_8c.html#aaf151f3094bb9103b0054add2d0e43f4" title="Конструктор keyvalue." alt="" coords="159,5,304,32"/>
+</map>
+</div>
+
+</div>
+</div>
+<a id="a44330165db76d34e394c928d264d39d6" name="a44330165db76d34e394c928d264d39d6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a44330165db76d34e394c928d264d39d6">&#9670;&nbsp;</a></span>START_TEST() <span class="overload">[6/6]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">END_TEST START_TEST </td>
+          <td>(</td>
+          <td class="paramtype">test_keyval_value_pointertype_field&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">См. определение в файле <a class="el" href="check__keyvalue_8c_source.html">check_keyvalue.c</a> строка <a class="el" href="check__keyvalue_8c_source.html#l00028">28</a></p>
+<div class="fragment"><div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>                                                {</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <span class="keywordtype">double</span> val1 = 12.213;</div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>  <span class="keywordtype">double</span> *pointer1 = &amp;val1;</div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span>  <span class="keywordtype">char</span>* key1 = <span class="stringliteral">&quot;kkk&quot;</span>;</div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span>  <span class="keyword">struct </span><a class="code hl_struct" href="structkeyvalue.html">keyvalue</a> *kv1 = <a class="code hl_function" href="_keyvalue_8c.html#aaf151f3094bb9103b0054add2d0e43f4">keyvalue_constructor</a>(key1, pointer1, <span class="keyword">sizeof</span>(pointer1));</div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span>  ck_assert_uint_eq(*((<span class="keywordtype">double</span>*)(kv1-&gt;<a class="code hl_variable" href="structkeyvalue.html#a963e7b2cc60458177f86a60df21ea421">value</a>)), *pointer1);</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span>} END_TEST</div>
+</div><!-- fragment -->
+<p class="reference">Перекрестные ссылки <a class="el" href="_keyvalue_8c_source.html#l00023">keyvalue_constructor()</a> и <a class="el" href="_keyvalue_8h_source.html#l00020">keyvalue::value</a>.</p>
+<div class="dynheader">
+Граф вызовов:</div>
+<div class="dyncontent">
+<div class="center"><img src="check__keyvalue_8c_a44330165db76d34e394c928d264d39d6_cgraph.png" border="0" usemap="#acheck__keyvalue_8c_a44330165db76d34e394c928d264d39d6_cgraph" alt=""/></div>
+<map name="acheck__keyvalue_8c_a44330165db76d34e394c928d264d39d6_cgraph" id="acheck__keyvalue_8c_a44330165db76d34e394c928d264d39d6_cgraph">
+<area shape="rect" title=" " alt="" coords="5,5,111,32"/>
+<area shape="rect" href="_keyvalue_8c.html#aaf151f3094bb9103b0054add2d0e43f4" title="Конструктор keyvalue." alt="" coords="159,5,304,32"/>
+</map>
+</div>
+
+</div>
+</div>
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Документация по Лабораторная работа №4 по предмету программирование МФ МГТУ им. Н.Э. Баумана. Последние изменения: Чт 16 Фев 2023 13:00:39. Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.2
+</small></address>
+</body>
+</html>

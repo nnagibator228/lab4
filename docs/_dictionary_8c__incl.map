@@ -1,0 +1,9 @@
+<map id="src/Dict/Dictionary.c" name="src/Dict/Dictionary.c">
+<area shape="rect" id="node1" title="Основной файл функций compare." alt="" coords="297,5,435,32"/>
+<area shape="rect" id="node2" href="$_dictionary_8h.html" title="Header&#45;файл реализации структуры Словаря на базе Дерева Бинарного Поиска" alt="" coords="48,80,137,107"/>
+<area shape="rect" id="node4" href="$_keyvalue_8h.html" title="Header&#45;файл реализации структуры keyvalue." alt="" coords="161,80,312,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="336,80,396,107"/>
+<area shape="rect" id="node6" title=" " alt="" coords="420,80,483,107"/>
+<area shape="rect" id="node7" title=" " alt="" coords="507,80,571,107"/>
+<area shape="rect" id="node3" href="$_binary_search_tree_8h.html" title="Header&#45;файл реализации структуры Дерева Бинарного Поиска" alt="" coords="5,155,180,181"/>
+</map>
